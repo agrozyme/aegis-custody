@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: franklin_bold;
+    src: url(/fonts/librefranklin-bold.woff);
+}
+@font-face {
+    font-family: franklin;
+    src: url(/fonts/librefranklin-regular.woff);
+}
+@font-face {
+    font-family: gotham_bold;
+    src: url(/fonts/Gotham-Bold.woff);
+}
+@font-face {
+    font-family: gotham_book_italic;
+    src: url(/fonts/Gotham-BookItalic.woff);
+}
+@font-face {
+    font-family: gotham_book;
+    src: url(/fonts/GothamBook.woff);
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+    font-family: "franklin_bold";
+    font-weight: bold;
+}
+
+p {
+    font-family: ingra, sans-serif;
+}
+
+.uk-offcanvas-bar {
+    background: #fff;
+    color: #333;
+}
+
+.mobileNavItem a {
+    color: #333;
+}
