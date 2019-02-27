@@ -5,6 +5,7 @@ import MissionVision from "./Components/MissionVision";
 import OurTeam from "./Components/OurTeam";
 import LearnMore from "../../Components/LearnMore";
 import Footer from "../../Components/Footer";
+import OurSponsors from "./Components/OurSponsors"
 
 class About extends Component {
     render() {
@@ -13,6 +14,7 @@ class About extends Component {
                 <Landing />
                 <MissionVision />
                 <OurTeam />
+                <OurSponsors />
                 <LearnMore />
                 <Footer />
             </div>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Landing from "./Components/Landing";
 import MainFeatures from "./Components/MainFeatures";
-import CoinSupport from "./Components/CoinSupport";
+import WorkflowDiagram from "./Components/WorkflowDiagram";
 import Workflow from "./Components/Workflow";
 import MountainShadow from "./Components/MountainShadow";
 import UserStories from "./Components/UserStories";
@@ -17,9 +17,9 @@ class Product extends Component {
             <div>
                 <Landing />
                 <MainFeatures />
-                <CoinSupport />
-                <Workflow />
-                <MountainShadow />
+                <WorkflowDiagram />
+                {/* <Workflow /> */}
+                {/* <MountainShadow /> */}
                 <UserStories />
                 <MultilayerInfo />
                 <VisionStatement />

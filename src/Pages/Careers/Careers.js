@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import WorkingAtAegis from "./Components/WorkingAtAegis";
 import OpenPositions from "./Components/OpenPositions";
+import CareersCopy from "./Components/CareersCopy"
 import Footer from "../../Components/Footer";
 
 const Container = styled.div`
@@ -24,6 +25,7 @@ class Careers extends Component {
             <Container>
                 <Menu dark={true} />
                 <WorkingAtAegis />
+                <CareersCopy />
                 <OpenPositions />
                 <Footer />
             </Container>

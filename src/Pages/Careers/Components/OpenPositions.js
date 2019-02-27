@@ -126,10 +126,10 @@ class OpenPositions extends Component {
                                 </ModalBody>
                             </div>
 
-                            <h4>{job.data.job_title[0].text}</h4>
-                            <p>{job.data.location[0].text}</p>
-                            <p>{job.data.job_brief[0].text}</p>
-                            <Apply data-uk-toggle={"target: #job-listing-" + i}>
+                            <h4 style={{marginTop: "10px", marginBottom: "10px"}}>{job.data.job_title[0].text}</h4>
+                            <p style={{marginTop: "10px", marginBottom: "0px"}}>{job.data.location[0].text}</p>
+                            <p style={{marginTop: "0px", marginBottom: "10px"}}>{job.data.job_brief[0].text}</p>
+                            <Apply data-uk-toggle={"target: #job-listing-" + i} style={{marginTop: "0px", marginBottom: "10px"}}>
                                 See More{" "}
                                 <img
                                     src="./images/right-arrow-red.svg"

@@ -51,7 +51,8 @@ const Col = styled.div`
 const LinkStyle = {
     textDecoration: "none",
     color: "#666666",
-    fontSize: "13px"
+    fontSize: "13px",
+    margin: "0"
 };
 
 {
@@ -82,6 +83,10 @@ class Footer extends Component {
                         <br />
                         <Link to="/about" style={LinkStyle}>
                             About
+                        </Link>
+                        <br />
+                        <Link to="/about" style={LinkStyle}>
+                            News
                         </Link>
                         <br />
                         <Link to="/careers" style={LinkStyle}>

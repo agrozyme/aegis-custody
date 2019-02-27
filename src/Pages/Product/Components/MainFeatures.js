@@ -36,7 +36,7 @@ const Coins = styled.div`
 
     img {
         height: 75px;
-        margin-right: 20px;
+        margin: 0 10px;
         @media (max-width: 1000px) {
             margin-right: 0px;
         }
@@ -74,7 +74,7 @@ class MainFeatures extends Component {
                     <Coins support={true}>
                         <p>We Currently Support</p>
                     </Coins>
-                    <Coins coin={true}>
+                    <Coins coin={true} style={{marginBottom: "0"}}>
                         <img src="./images/coin-1.png" alt="" />
                         <img src="./images/coin-2.png" alt="" />
                         <img src="./images/coin-3.png" alt="" />

@@ -4,8 +4,6 @@ import Prismic from "prismic-javascript";
 import { Link, RichText, Date } from "prismic-reactjs";
 
 const Container = styled.div`
-    min-height: 60vh;
-    padding: 100px 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,31 +17,9 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
-    width: 250px;
+    max-width: 200px;
     margin: 20px;
-    flex-grow: 1;
-
-    p {
-        width: 250px;
-        margin: 0px auto;
-    }
-`;
-
-const Profile = styled.div`
-    width: 250px;
-    height: 250px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url(${props => props.url && props.url});
-    background-position: center;
-    background-size: cover;
-`;
-
-const DummyCard = styled.div`
-    height: 0px;
-    width: 250px;
-    margin: 20px;
+    width: 100%;
 `;
 
 class OurTeam extends Component {
@@ -56,7 +32,7 @@ class OurTeam extends Component {
     }
 
     loadJobs = () => {
-        const apiEndpoint = "https://aegis-test.cdn.prismic.io/api/v2";
+        const apiEndpoint = "https://aegis.cdn.prismic.io/api/v2";
 
         Prismic.api(apiEndpoint).then(api => {
             api.query(Prismic.Predicates.at("document.type", "employee")).then(
@@ -71,64 +47,21 @@ class OurTeam extends Component {
 
     render() {
         return (
-            <Container>
-                {this.state.doc &&
-                    this.state.doc.map((employee, i) => (
-                        <Card key={i}>
-                            {console.log(employee)}
-                            <Profile url={employee.data.profile.url} />
-                            <p>{employee.data.name[0].text}</p>
-                            <p>{employee.data.title[0].text}</p>
-                        </Card>
-                    ))}
-
-                {this.state.doc % 2 === 0 ? null : <DummyCard />}
-                {/* <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card>
-                <Card>
-                    <Profile url="http://via.placeholder.com/250" />
-                    <p>John Smith</p>
-                    <p>Senior Engineer</p>
-                </Card> */}
-            </Container>
+            <div style={{ padding: "70px 0" }}>
+                <h2 style={{ textAlign: "center" }}>Our Team</h2>
+                <p style={{maxWidth: "600px", margin: "0 auto 60px", textAlign: "center"}}>The mission of Coinbase is to create an open financial system for the world. There are a number of big challenges to get there. Two of them are trust and ease of use for this powerful new technology.</p>
+                <Container>
+                    {this.state.doc &&
+                        this.state.doc.map((employee, i) => (
+                            <Card key={i}>
+                                {console.log(employee)}
+                                {/* <Profile url={employee.data.profile.url} /> */}
+                                <h3 style={{ marginBottom: "10px", textAlign: "center" }}>{employee.data.name[0].text}</h3>
+                                <p style={{ margin: "0", textAlign: "center" }}>{employee.data.title[0].text}</p>
+                            </Card>
+                        ))}
+                </Container>
+            </div>
         );
     }
 }

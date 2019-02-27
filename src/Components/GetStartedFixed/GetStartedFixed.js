@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Btn = styled.button`
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 50px;
+    right: 50px;
     padding: 10px 30px 10px 30px;
     border: 0px solid #fff;
     font-size: 1em;
@@ -16,6 +16,7 @@ const Btn = styled.button`
     cursor: pointer;
     z-index: 100;
     display: none;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2)
 `;
 
 class GetStartedFixed extends Component {

@@ -20,7 +20,7 @@ const Section = styled.div`
 
 const Desktop = styled.div`
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: linear-gradient(
         135deg,
@@ -116,7 +116,7 @@ const KeyFacts = styled.div`
 
     img {
         height: 75px;
-        margin-right: 20px;
+        margin: 0 10px;
         @media (max-width: 1000px) {
             margin-right: 0px;
         }
@@ -160,7 +160,7 @@ class ProductPreview extends Component {
                         </p>
                     </Header>
                     <Container>
-                        <Col width="55%">
+                        <Col width="55%" style={{minHeight: "400px"}}>
                             <KeyImg
                                 src="./images/key-shadow.png"
                                 alt="shadow"
@@ -174,7 +174,7 @@ class ProductPreview extends Component {
                         </Col>
                         <Col
                             width="45%"
-                            data-uk-scrollspy="cls: uk-animation-slide-right; repeat: true; offset-top: -200"
+                            data-uk-scrollspy="cls: uk-animation-slide-right; repeat: true; offset-top: -200" style={{ display: "flex", alignItems: "center", height: "100%", minHeight: "400px", marginLeft: "0px"}}
                         >
                             <KeyFacts>
                                 <img src="./images/key-fact-2.png" alt="" />

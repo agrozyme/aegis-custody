@@ -39,6 +39,7 @@ const NavItem = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s ease;
 
     @media (max-width: 1200px) {
         padding: 8px 10px 6px 10px;
@@ -50,6 +51,23 @@ const NavItem = styled.div`
         text-decoration: none;
         color: #fff;
         ${props => props.dark && "color: #353535;"}
+    }
+
+    .navItem {
+        transition: .2s ease;
+        padding: 8px 10px 6px 5px !important;
+    }
+
+    .navItem:hover {
+        color: #ff6a5f
+    }
+
+    .hideGetStarted {
+        transition: .2s ease;
+    }
+
+    .hideGetStarted:hover {
+        color: #fff;
     }
 
     ${props =>
@@ -91,6 +109,8 @@ const MobileMenuBtn = styled.div`
         display: block;
     }
 `;
+
+
 
 class Menu extends Component {
     state = {
@@ -188,14 +208,17 @@ class Menu extends Component {
                 </MobileMenuBtn>
 
                 <ItemContainer>
-                    <NavItem dark={this.state.dark}>
-                        <Link to="/product">Custody Solution</Link>
+                    <NavItem dark={this.state.dark} style={{padding: "0"}}>
+                        <Link className="navItem" to="/product">Custody Solution</Link>
                     </NavItem>
-                    <NavItem dark={this.state.dark}>
-                        <Link to="/about">About</Link>
+                    <NavItem dark={this.state.dark} style={{padding: "0"}}>
+                        <Link className="navItem" to="/about">About</Link>
                     </NavItem>
-                    <NavItem dark={this.state.dark}>
-                        <Link to="/careers">Careers</Link>
+                    <NavItem dark={this.state.dark} style={{padding: "0"}}>
+                        <Link className="navItem" to="/about">News</Link>
+                    </NavItem>
+                    <NavItem dark={this.state.dark} style={{padding: "0"}}>
+                        <Link className="navItem" to="/careers">Careers</Link>
                     </NavItem>
                     <NavItem primary={true} style={GetStarted}>
                         <a

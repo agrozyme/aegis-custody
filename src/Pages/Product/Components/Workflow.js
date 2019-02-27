@@ -54,7 +54,7 @@ class Workflow extends Component {
                         store their crypto and digital assets.
                     </p>
                 </div>
-                <div id="video">
+                {/* <div id="video">
                     <div
                         style={{
                             padding: "56.25% 0 0 0",
@@ -79,7 +79,7 @@ class Workflow extends Component {
                         />
                     </div>
                     <script src="https://player.vimeo.com/api/player.js" />
-                </div>
+                </div> */}
             </Container>
         );
     }

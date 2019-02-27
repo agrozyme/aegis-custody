@@ -47,7 +47,7 @@ const LeaderContent = styled.div`
 `;
 
 const TextCont = styled.div`
-    margin-top: 180px;
+     margin-top: 230px;
 `;
 
 const LeaderTitle = styled.h1`

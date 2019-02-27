@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
     height: 80vh;
-    background: #4581af;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ class WorkingAtAegis extends Component {
     render() {
         return (
             <Container>
-                <h1>Working At Aegis</h1>
+                <h2 style={{textAlign: "center", color: "white", lineHeight: "65px", fontSize: "55px", color: "#353535"}}>Join Our Team to <br></br>Build the Future of Finance</h2>
             </Container>
         );
     }
