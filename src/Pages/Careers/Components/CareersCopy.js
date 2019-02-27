@@ -35,7 +35,7 @@ class CareersCopy extends Component {
                     <div style={Row}>
                         <div style={Image}></div>
                         <div style={Copy}>
-                            <h3 style={{ margin: "0 0 15px 0" }}>Our Culture</h3>
+                            <h3 style={{ margin: "0 0 15px 0" }}>Working at Aegis</h3>
                             <p style={{ margin: "0" }}>We’ve taken a huge challenge and made it into our mission: To create an open financial system for the world. To achieve this, we are building a team of smart, creative, passionate optimists, the kind of people who see opportunity where others see roadblocks. If this sounds like you, check out our open roles.</p>
                         </div>
                     </div>

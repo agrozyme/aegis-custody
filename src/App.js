@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import ScrollProgress from "./Components/ScrollProgress";
+// import ScrollProgress from "./Components/ScrollProgress";
 import GetStartedFixed from "./Components/GetStartedFixed";
 
 //pages
@@ -25,7 +25,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <ScrollProgress />
+                {/* <ScrollProgress /> */}
                 <GetStartedFixed />
                 <div id="contact-form" data-uk-modal="true">
                     <div className="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">

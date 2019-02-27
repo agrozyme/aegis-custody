@@ -3,14 +3,13 @@ import styled from "styled-components";
 
 const Section = styled.div`
     width: 100vw;
-    height: 80vh;
-    min-height: 60vh;
     text-align: center;
 `;
 
 const Container = styled.div`
     width: 100%;
     height: 100%;
+    padding: 140px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +34,6 @@ const GetStarted = styled.button`
     text-transform: uppercase;
     font-size: 1em;
     cursor: pointer;
-
     z-index: 2;
 
     ${props =>
