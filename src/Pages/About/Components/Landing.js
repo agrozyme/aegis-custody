@@ -71,27 +71,15 @@ class Landing extends Component {
                 <Container>
                     <Menu dark={false} />
                     <ContentContainer>
-                        <SquresCont>
+                        {/* <SquresCont>
                             <img
                                 src="./images/about-leader-squares.svg"
                                 alt=""
                             />
-                        </SquresCont>
-                        <div style={{ maxWidth: "400px" }}>
-                            <h2>Our vision is to build the future of value</h2>
-                            <p>
-                                Aegis Custody is a FinTech digital assets
-                                custodian and management company built for
-                                institutional customers including exchanges,
-                                funds, STOs and financial services institutions.
-                                Founded in 2018, we are an investor backed
-                                company based in San Francisco, CA with offices
-                                in South Dakota and in Taiwan. Fully operational
-                                and launched our self custody solution in Asia
-                                and the US. Aegis Custody is In the process of
-                                becoming a licensed qualified custodian very
-                                soon.
-                            </p>
+                        </SquresCont> */}
+                        <div style={{textAlign: "center", maxWidth: "800px" }}>
+                            <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "white"}}>Our vision is to build<br></br>the future of value</h2>
+                            <a style={{textDecoration: "none"}}href="#ourTeam" data-uk-scroll="true"><p style={{color: "#FF6A5F",}}>Our Team</p></a>
                         </div>
                     </ContentContainer>
                 </Container>

@@ -35,7 +35,7 @@ class CareersCopy extends Component {
                         <div style={Image}></div>
                         <div style={Copy}>
                             <h3 style={{ margin: "0 0 15px 0" }}>Working at Aegis</h3>
-                            <p style={{ margin: "0" }}>We’ve taken a huge challenge and made it into our mission: To create an open financial system for the world. To achieve this, we are building a team of smart, creative, passionate optimists, the kind of people who see opportunity where others see roadblocks. If this sounds like you, check out our open roles.</p>
+                            <p style={{ margin: "0" }}>We are a team of highly committed and passionate individuals bringing tremendous depth of experience, skills, and talents to develop the best infrastructure for the rapidly growing global digital assets market. We have taken up an important challenge and motivated to play a vital role in shaping the ecosystem. </p>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ class CareersCopy extends Component {
                     <div style={Row}>
                         <div style={Copy}>
                             <h3 style={{ margin: "0 0 15px 0" }}>Our Culture</h3>
-                            <p style={{ margin: "0" }}>We’ve taken a huge challenge and made it into our mission: To create an open financial system for the world. To achieve this, we are building a team of smart, creative, passionate optimists, the kind of people who see opportunity where others see roadblocks. If this sounds like you, check out our open roles.</p>
+                            <p style={{ margin: "0" }}>We are building our culture carefully and deliberately. Our values are constantly in development to reflect our Aegis family’s values. However, the fundamentals don’t change - we aim to uphold to higher standards of excellence in every dimension - global mindset, respect for all, curious, fast-moving, learning, fun, committed. </p>
                         </div>
                         <div style={Image}></div>
                     </div>

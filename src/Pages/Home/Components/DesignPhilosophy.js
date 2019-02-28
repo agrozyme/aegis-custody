@@ -138,17 +138,13 @@ class DesignPhilosophy extends Component {
                 <div>
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}><img style={{maxHeight: "100px"}} src="./images/icons-20.png"></img></div>
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
-                        <div style={{margin: "45px 15px 15px 15px", maxWidth: "550px", fontSize: "20px", textAlign: "center"}}>
-                            <p>Safeguarding digital assets is risky because of the complexity of cryptographic systems.</p>
-                        </div>
-                        <div style={{margin: "45px 15px 15px 15px", maxWidth: "550px", fontSize: "20px", textAlign: "center"}}>
-                            <p>Custody solutions enabled hackers to steal an average of $2.7m worth of cryptocurrency every day of 2018</p>
+                        <div style={{margin: "45px 15px 15px 15px", maxWidth: "600px", fontSize: "20px", textAlign: "center"}}>
+                            <p>Safeguarding digital assets is risky because of the complexity of cryptographic systems. Custody solutions enabled hackers to steal an average of $2.7m worth of cryptocurrency every day of 2018</p>
                         </div>
                     </div>
                     <div style={{border: "2px solid #FF6A5F", maxWidth: "550px", margin: "30px auto 0", padding: "30px", fontSize: "25px", textAlign: "center"}}><p style={{margin: "0px"}}> Aegis Custody secures digital assets with an intuitive combination of cold storage hardware, multisig wallets, and quorum based approvals</p></div>
                     <div style={{display: "flex", flexDirection: "column"}}>
-                    <div style={{border: ".75px solid #FF6A5F", width: "1px", height: "100px", margin: "0 auto"}}></div>
-                    <img style={{width: "15px", margin: "0 auto"}} src="./images/arrow.png"></img>
+                    <img style={{margin: "40px auto 80px", maxWidth: "45px"}} src="./images/down-arrow2.svg" alt="" />
                     </div>
 
                 </div>

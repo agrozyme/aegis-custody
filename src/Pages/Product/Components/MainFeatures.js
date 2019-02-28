@@ -60,7 +60,9 @@ const Coins = styled.div`
 
 const largeCopy = {
     fontSize: "25px",
-    lineHeight: "45px"
+    lineHeight: "35px",
+    marginLeft: "20px",
+    minWidth: "800px"
 };
 
 const centered = {
@@ -72,8 +74,8 @@ class MainFeatures extends Component {
     render() {
         return (
             <Container>
-                <div style={{maxWidth: "1300px", display: "flex", alignItems: "center", margin: "0 auto"}}>
-                <Col width="30%" style={centered}>
+                <div style={{maxWidth: "1150px", display: "flex", alignItems: "center", margin: "0 auto"}}>
+                <Col width="100%" style={centered}>
                     <Coins support={true}>
                         <p>We Currently Support</p>
                     </Coins>
@@ -86,7 +88,7 @@ class MainFeatures extends Component {
                         <p>and more coming soon</p>
                     </Coins>
                 </Col>
-                <Col width="70%">
+                <Col width="100%">
                     <p style={largeCopy}>
                     Our inherent technology is designed with security controls to prevent against external threats, distributed key management system to safeguard from concentrated access, and institutional grade policies &amp; procedures to protect against human error 
                     </p>

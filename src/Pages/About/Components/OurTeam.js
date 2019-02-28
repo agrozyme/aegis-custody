@@ -19,9 +19,9 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
-    max-width: 200px;
+    min-width: 200px;   
     margin: 20px 20px 40px 20px;
-    max-width: 400px;
+    max-width: 200px;
 `;
 
 class OurTeam extends Component {
@@ -50,9 +50,10 @@ class OurTeam extends Component {
 
     render() {
         return (
-            <div style={{ padding: "70px 0" }}>
+            <div id="ourTeam" style={{ maxWidth: "1000px", padding: "70px 0", margin: "0 auto" }}>
                 <h2 style={{ textAlign: "center" }}>Our Team</h2>
-                <p style={{maxWidth: "560px", margin: "0 auto 60px", textAlign: "center"}}>We are growing and continue to add highly talented, innovative and experienced to Aegis family. </p>
+                <p style={{ maxWidth: "560px", margin: "0 auto 60px", textAlign: "center" }}>Our team is made up of global leaders, financial executives, leading technologists and advisors
+                </p>
                 <Container>
                     {this.state.doc &&
                         this.state.doc.map((employee, i) => (

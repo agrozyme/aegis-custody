@@ -64,7 +64,7 @@ const Mobile = styled.div`
 `;
 
 const Header = styled.div`
-    max-width: 500px;
+    max-width: 550px;
     color: #fff;
     margin-top: 30px;
 

@@ -39,7 +39,6 @@ const LeaderContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 60px;
 
     /* @media (max-width: 1000px) {
          justify-content: flex-start;
@@ -55,7 +54,7 @@ const LeaderTitle = styled.h1`
     font-size: 4em;
     color: #fff;
     z-index: 3;
-    margin: 0px;
+    margin: 0 0 0 60px;
     
     @media (max-width: 1255px) {
         font-size: 3em;
@@ -91,7 +90,7 @@ const CallToAction = styled.div`
     text-align: center;
     z-index: 2;
     margin-top: auto;
-    margin-bottom: 25px;
+    margin-bottom: 70px;
 
     #button {
         max-width: 280px;
@@ -118,7 +117,7 @@ const MountainBG = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    z-index: 1;
+    z-index: 0;
 
     @media (max-width: 1000px) {
         height: 45%;
@@ -134,13 +133,13 @@ class Landing extends Component {
                     <Menu dark={true}/>
                     <LeaderContent>
                         <TextCont>
-                            <LeaderTitle style={{color: "#353535"}}>
+                            <LeaderTitle style={{color: "#353535", marginLeft: "60px"}}>
                                 Institutional
                                 <br />
                                 Digital Asset Custody
                             </LeaderTitle>
                             {/* <LeaderLine /> */}
-                            <LeaderSubtitle style={{color: "#353535"}}>
+                            <LeaderSubtitle style={{color: "#353535", marginLeft: "60px"}}>
                                 Bringing you secure and simple storage
                             </LeaderSubtitle>
                         </TextCont>
@@ -156,7 +155,7 @@ class Landing extends Component {
                             <br />
                             <br />
                             <a href="#section2" data-uk-scroll="true">
-                                <img src="./images/down-arrow.svg" alt="" />
+                                {/* <img style={{marginTop: "5px ", maxWidth: "45px", boxShadow: "0px 5px 5px rgba(0,0,0,.2)"}}src="./images/down-arrow2.svg" alt="" /> */}
                             </a>
                         </CallToAction>
                     </LeaderContent>
