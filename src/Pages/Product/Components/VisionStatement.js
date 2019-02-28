@@ -9,6 +9,7 @@ const Container = styled.div`
 
     h1 {
         color: #fff;
+        margin-bottom: 8px;
     }
 
     p {
@@ -20,8 +21,8 @@ class VisionStatement extends Component {
     render() {
         return (
             <Container>
-                <h1>Building for the Future of Finance</h1>
-                <p>
+                <h1>Building the Future of Finance</h1>
+                <p style={{fontSize: "20px", marginTop: "0px"}}>
                     Aegis Custody caters to institutions, exchanges, hedge
                     funds, investment firms and digital asset businesses
                 </p>

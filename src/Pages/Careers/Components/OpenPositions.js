@@ -90,7 +90,7 @@ class OpenPositions extends Component {
     render() {
         return (
             <Container>
-                <h1 style={{ textTransform: "uppercase" }}>Careers</h1>
+                <h1 style={{fontFamily: "franklin", marginBottom: "30px" }}>Open Positions</h1>
 
                 {this.state.doc &&
                     this.state.doc.map((job, i) => (

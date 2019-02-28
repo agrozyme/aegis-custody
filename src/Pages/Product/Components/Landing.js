@@ -17,28 +17,32 @@ const ContentContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: calc(100vh - 50px);
+    min-height: 650px;
+    background-image: url(./images/mountainstock2.png);
+    background-position: bottom;
+    background-size: cover;
 `;
 
 const Copy = styled.div`
-    max-width: 30%;
+    max-width: 600px;
     padding-bottom: 100px;
     margin: 0px auto;
     text-align: center;
-
     @media (max-width: 800px) {
         max-width: 90%;
     }
 `;
 
 const ContentItems = styled.div`
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 0;
+    background-color: #f2f2f2;
+    width: 100%;
 `;
 
 const ContentRow = {
-    display: "flex"
+    display: "flex",
+    marginTop: "30px"
 };
 
 const ContentBox = {
@@ -65,7 +69,7 @@ class Landing extends Component {
                 <Menu dark={true} />
                 <ContentContainer>
                     <Copy>
-                        <h1>Custody Solution</h1>
+                        <h1 style={{width: "100%"}}>Custody Solution</h1>
                         <p>
                             Multi-layer security designed with proprietary cold
                             storage, multi-signature accounts, and security and
@@ -74,7 +78,7 @@ class Landing extends Component {
                     </Copy>
                 </ContentContainer>
                 <ContentItems>
-                    <div style={ContentRow} data-uk-scrollspy="target: > .contentBox; cls:uk-animation-fade; delay: 200">
+                    <div style={ContentRow} data-uk-scrollspy="target: > .contentBox; cls:uk-animation-fade; delay: 200" style={{maxWidth: "1300px", margin: "0 auto", display: "flex"}}>
                         <div className="contentBox" style={ContentBox}>
                             <div style={LandingImageWrap}>                        
                                 <img src="./images/icons-13.png" alt="" style={LandingImages}/>

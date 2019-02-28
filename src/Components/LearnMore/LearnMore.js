@@ -14,11 +14,11 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
-        165deg,
-        rgba(239, 250, 255, 0) 40%,
-        rgba(223, 241, 252, 0.7) 100%
-    );
+    // background: linear-gradient(
+    //     165deg,
+    //     rgba(239, 250, 255, 0) 40%,
+    //     rgba(223, 241, 252, 0.7) 100%
+    // );
 
     h2 {
         margin: 0px;
@@ -29,12 +29,13 @@ const GetStarted = styled.button`
     background: #ff6a5f;
     border-radius: 20px;
     border: 0px solid #ff6a5f;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: #fff;
     text-transform: uppercase;
     font-size: 1em;
     cursor: pointer;
     z-index: 2;
+    text-align: center;
 
     ${props =>
         props.keyPage
@@ -45,7 +46,7 @@ const GetStarted = styled.button`
         box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
     `
             : `
-        padding: 10px 100px;
+        padding: 10px 20px;
     `}
 `;
 
@@ -55,12 +56,12 @@ class LearnMore extends Component {
             <Section>
                 <Container>
                     <h2>Learn More</h2>
-                    <p>We are onboarding exchanges, funds and institutions</p>
+                    <p style={{fontSize: "20px", marginTop: "5px"}}>We are onboarding exchanges, funds and institutions</p>
                     <GetStarted
                         className="hideGetStarted"
                         data-uk-toggle="target: #contact-form"
                     >
-                        Get Started
+                        <div style={{padding: "0px 20px"}}>Get Started</div>
                     </GetStarted>
                 </Container>
             </Section>

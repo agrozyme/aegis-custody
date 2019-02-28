@@ -19,7 +19,6 @@ const Container = styled.div`
     }
 
     h1 {
-        background: #fff;
         margin: 0px;
         padding-bottom: 20px;
         @media (max-width: 600px) {
@@ -48,7 +47,7 @@ const ContentImageWrap = {
 
 const ContentBox = {
     maxWidth: "350px",
-    margin: "20px"
+    margin: "20px 30px"
 }
 
 class WorkflowDiagram extends Component {

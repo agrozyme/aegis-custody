@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Section = {
-    // backgroundColor: 'pink',
     padding: "35px 20px",
 }
 

@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Product from "./Pages/Product";
 import About from "./Pages/About";
 import Careers from "./Pages/Careers";
+import Test from "./Test"
 
 const submitBtn = {
     background: "#ff6a5f",
@@ -145,6 +146,7 @@ class App extends Component {
                         <Route exact path="/about" component={About} />
                         <Route exact path="/careers" component={Careers} />
                         <Route exact path="/success" component={Home} />
+                        <Route exact path="/test" component={Test} />
                     </Switch>
                 </Router>
             </div>

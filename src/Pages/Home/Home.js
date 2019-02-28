@@ -7,6 +7,7 @@ import ProductPreview from "./Components/ProductPreview";
 import Sponsors from "./Components/Sponsors";
 import LearnMore from "../../Components/LearnMore";
 import Footer from "../../Components/Footer";
+import News from "./Components/News"
 
 const GetStarted = styled.button`
     background: #ff6a5f;
@@ -103,6 +104,8 @@ class Home extends Component {
                 <DesignPhilosophy />
 
                 <ProductPreview />
+
+                <News />
 
                 <Sponsors />
 

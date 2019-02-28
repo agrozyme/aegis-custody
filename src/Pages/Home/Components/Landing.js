@@ -9,7 +9,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
+    min-height: 800px;
     //display background line
     ${props =>
         props.bgLine &&
@@ -27,9 +27,9 @@ const LeaderInner = styled.div`
     position: relative;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3082b3+0,9fdfff+100 */
     background: linear-gradient(
-        135deg,
-        rgba(48, 130, 179, 1) 0%,
-        rgba(159, 223, 255, 1) 100%
+        to bottom,
+        #F8FDFF,
+        #AED3EA
     );
 `;
 
@@ -39,6 +39,7 @@ const LeaderContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 60px;
 
     /* @media (max-width: 1000px) {
          justify-content: flex-start;
@@ -47,7 +48,7 @@ const LeaderContent = styled.div`
 `;
 
 const TextCont = styled.div`
-     margin-top: 230px;
+     margin-top: 35vh;
 `;
 
 const LeaderTitle = styled.h1`
@@ -55,9 +56,7 @@ const LeaderTitle = styled.h1`
     color: #fff;
     z-index: 3;
     margin: 0px;
-    margin-left: 8%;
-    margin-right: 8%;
-
+    
     @media (max-width: 1255px) {
         font-size: 3em;
     }
@@ -72,8 +71,6 @@ const LeaderSubtitle = styled.h3`
     z-index: 2;
     margin: 0px;
     margin-bottom: 15px;
-    margin-left: 8%;
-    margin-right: 8%;
     font-family: ingra, sans-serif;
     font-weight: 400;
 
@@ -83,7 +80,7 @@ const LeaderSubtitle = styled.h3`
 `;
 
 const LeaderLine = styled.div`
-    height: 2px;
+    height: 3px;
     background: #ff6a5f;
     width: 100%;
     z-index: 0;
@@ -112,15 +109,15 @@ const CallToAction = styled.div`
 `;
 
 const MountainBG = styled.div`
-    width: 100%;
-    height: 75%;
+    min-width: 100%;
+    height: 115%;
     position: absolute;
     left: 0px;
     bottom: 0px;
     background-image: url("./images/mountain-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
     z-index: 1;
 
     @media (max-width: 1000px) {
@@ -134,16 +131,16 @@ class Landing extends Component {
         return (
             <Container>
                 <LeaderInner>
-                    <Menu />
+                    <Menu dark={true}/>
                     <LeaderContent>
                         <TextCont>
-                            <LeaderTitle>
+                            <LeaderTitle style={{color: "#353535"}}>
                                 Institutional
                                 <br />
                                 Digital Asset Custody
                             </LeaderTitle>
-                            <LeaderLine />
-                            <LeaderSubtitle>
+                            {/* <LeaderLine /> */}
+                            <LeaderSubtitle style={{color: "#353535"}}>
                                 Bringing you secure and simple storage
                             </LeaderSubtitle>
                         </TextCont>
@@ -152,6 +149,7 @@ class Landing extends Component {
                                 id="button"
                                 href="#section2"
                                 data-uk-scroll="true"
+                                style={{color: "white", backgroundColor: "#9DD1F1", boxShadow:"0 5px 5px rgba(0,0,0,.2)", borderRadius: "30px", fontSize: "18px"}}
                             >
                                 Custody Solution
                             </a>
@@ -162,7 +160,7 @@ class Landing extends Component {
                             </a>
                         </CallToAction>
                     </LeaderContent>
-                    <MountainBG className="animated fadeIn slow" />
+                    <MountainBG className="animated fadeInUp fast" />
                 </LeaderInner>
             </Container>
         );

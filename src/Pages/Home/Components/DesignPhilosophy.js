@@ -1,83 +1,83 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Section = styled.div`
-    width: 100vw;
-    height: auto;
-    min-height: 100vh;
+// const Section = styled.div`
+//     width: 100vw;
+//     height: auto;
+//     min-height: 100vh;
 
-    background-image: url(./images/bg-line.png);
-    background-repeat: no-repeat;
-    background-position: 130px 0px;
-    background-size: 2px 50%;
-`;
+//     background-image: url(./images/bg-line.png);
+//     background-repeat: no-repeat;
+//     background-position: 130px 0px;
+//     background-size: 2px 50%;
+// `;
 
-const InnerSection = styled.div`
-    width: 90%;
-    min-height: 100vh;
-    margin: 0px auto;
-    background: linear-gradient(
-        135deg,
-        rgba(204, 234, 249, 0.1) 0%,
-        rgba(157, 209, 241, 1) 100%
-    );
-    background-size: 65% 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    display: flex;
-    align-items: center;
+// const InnerSection = styled.div`
+//     width: 90%;
+//     min-height: 100vh;
+//     margin: 0px auto;
+//     // background: linear-gradient(
+//     //     135deg,
+//     //     rgba(204, 234, 249, 0.1) 0%,
+//     //     rgba(157, 209, 241, 1) 100%
+//     // );
+//     background-size: 65% 100%;
+//     background-repeat: no-repeat;
+//     background-position: 100% 100%;
+//     display: flex;
+//     align-items: center;
 
-    @media (max-width: 600px) {
-        background: #fff;
-    }
-`;
+//     @media (max-width: 600px) {
+//         background: #fff;
+//     }
+// `;
 
-const Row = styled.div`
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
+// const Row = styled.div`
+//     width: 100%;
+//     height: auto;
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap-reverse;
 
-    @media (max-width: 600px) {
-        padding: 0px 0px 70px 0px;
-    }
-`;
+//     @media (max-width: 600px) {
+//         padding: 0px 0px 70px 0px;
+//     }
+// `;
 
-const Col = styled.div`
-    ${props =>
-        props.left
-            ? `
-        width: 40%;
-        min-width: 300px;
-        z-index: 2;
-        `
-            : `
-        width: 60%;
-        min-width: 300px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 0px 10%;
-        box-sizing: border-box;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        `}
+// const Col = styled.div`
+//     ${props =>
+//         props.left
+//             ? `
+//         width: 40%;
+//         min-width: 300px;
+//         z-index: 2;
+//         `
+//             : `
+//         width: 60%;
+//         min-width: 300px;
+//         margin-top: 50px;
+//         margin-bottom: 50px;
+//         padding: 0px 10%;
+//         box-sizing: border-box;
+//         background: #fff;
+//         display: flex;
+//         flex-direction: column;
+//         `}
 
-    h2 {
-        margin-top: auto;
-        font-size: 2.25em;
-    }
-    p {
-        margin-bottom: auto;
-        margin-top: 0px;
-    }
-`;
+//     h2 {
+//         margin-top: auto;
+//         font-size: 2.25em;
+//     }
+//     p {
+//         margin-bottom: auto;
+//         margin-top: 0px;
+//     }
+// `;
 
-const FlowCharImg = styled.img`
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-`;
+// const FlowCharImg = styled.img`
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+//     z-index: 2;
+// `;
 
 // const FlowChartContainer = styled.div`
 //     width: 90%;
@@ -134,36 +134,25 @@ const FlowCharImg = styled.img`
 class DesignPhilosophy extends Component {
     render() {
         return (
-            <Section id="section2">
-                <InnerSection>
-                    <Row>
-                        <Col left={true}>
-                            <FlowCharImg
-                                src="./images/landing-flow-chart.png"
-                                alt=""
-                            />
-                        </Col>
+            <div id="section2" style={{minHeight: "500px", minWidth: "100vw", padding: "90px 0 20px", boxShadow: "0px 5px 10px rgba(0,0,0,.2"}}>
+                <div>
+                    <div style={{width: "100%", display: "flex", justifyContent: "center"}}><img style={{maxHeight: "100px"}} src="./images/icons-20.png"></img></div>
+                    <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+                        <div style={{margin: "45px 15px 15px 15px", maxWidth: "550px", fontSize: "20px", textAlign: "center"}}>
+                            <p>Safeguarding digital assets is risky because of the complexity of cryptographic systems.</p>
+                        </div>
+                        <div style={{margin: "45px 15px 15px 15px", maxWidth: "550px", fontSize: "20px", textAlign: "center"}}>
+                            <p>Custody solutions enabled hackers to steal an average of $2.7m worth of cryptocurrency every day of 2018</p>
+                        </div>
+                    </div>
+                    <div style={{border: "2px solid #FF6A5F", maxWidth: "550px", margin: "30px auto 0", padding: "30px", fontSize: "25px", textAlign: "center"}}><p style={{margin: "0px"}}> Aegis Custody secures digital assets with an intuitive combination of cold storage hardware, multisig wallets, and quorum based approvals</p></div>
+                    <div style={{display: "flex", flexDirection: "column"}}>
+                    <div style={{border: ".75px solid #FF6A5F", width: "1px", height: "100px", margin: "0 auto"}}></div>
+                    <img style={{width: "15px", margin: "0 auto"}} src="./images/arrow.png"></img>
+                    </div>
 
-                        <Col right={true}>
-                            <h2>Design Philosophy</h2>
-                            <p>
-                                Safeguarding digital assets is risky because of
-                                the complexity of cryptographic systems.
-                                Institutions do not yet have easy to use tools
-                                for mitigating this risk.
-                                <br />
-                                <br />
-                                Aegis Custody is a digital asset management
-                                solution designed for institutions. It provides
-                                security through an easy to use cold storage
-                                experience, combining on chain multi signature
-                                hardware wallets with flexible off chain
-                                business logic.
-                            </p>
-                        </Col>
-                    </Row>
-                </InnerSection>
-            </Section>
+                </div>
+            </div>
         );
     }
 }

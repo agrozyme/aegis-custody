@@ -7,6 +7,8 @@ const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
     h1 {
         font-family: gotham_book;
     }
@@ -18,8 +20,8 @@ const Container = styled.div`
 
 const Card = styled.div`
     max-width: 200px;
-    margin: 20px;
-    width: 100%;
+    margin: 20px 20px 40px 20px;
+    max-width: 400px;
 `;
 
 class OurTeam extends Component {
@@ -39,6 +41,7 @@ class OurTeam extends Component {
                 response => {
                     if (response) {
                         this.setState({ doc: response.results });
+                        console.log(response)
                     }
                 }
             );
@@ -49,7 +52,7 @@ class OurTeam extends Component {
         return (
             <div style={{ padding: "70px 0" }}>
                 <h2 style={{ textAlign: "center" }}>Our Team</h2>
-                <p style={{maxWidth: "600px", margin: "0 auto 60px", textAlign: "center"}}>The mission of Coinbase is to create an open financial system for the world. There are a number of big challenges to get there. Two of them are trust and ease of use for this powerful new technology.</p>
+                <p style={{maxWidth: "560px", margin: "0 auto 60px", textAlign: "center"}}>We are growing and continue to add highly talented, innovative and experienced to Aegis family. </p>
                 <Container>
                     {this.state.doc &&
                         this.state.doc.map((employee, i) => (

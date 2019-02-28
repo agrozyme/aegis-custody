@@ -64,6 +64,11 @@ const NavItem = styled.div`
 
     .hideGetStarted {
         transition: .2s ease;
+        font-family: system-ui;
+        font-weight: normal;
+        font-size: 16px;
+        border-radius: 50px;
+        padding-bottom: 2px;
     }
 
     .hideGetStarted:hover {
@@ -226,7 +231,7 @@ class Menu extends Component {
                             data-uk-toggle="target: #contact-form"
                             className="hideGetStarted"
                         >
-                            Get Started
+                            GET STARTED
                         </a>
                     </NavItem>
                 </ItemContainer>

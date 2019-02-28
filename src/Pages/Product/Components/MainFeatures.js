@@ -33,6 +33,7 @@ const Coins = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
+    min-width: 400px;
 
     img {
         height: 75px;
@@ -58,7 +59,8 @@ const Coins = styled.div`
 `;
 
 const largeCopy = {
-    fontSize: "25px"
+    fontSize: "25px",
+    lineHeight: "45px"
 };
 
 const centered = {
@@ -70,6 +72,7 @@ class MainFeatures extends Component {
     render() {
         return (
             <Container>
+                <div style={{maxWidth: "1300px", display: "flex", alignItems: "center", margin: "0 auto"}}>
                 <Col width="30%" style={centered}>
                     <Coins support={true}>
                         <p>We Currently Support</p>
@@ -85,13 +88,10 @@ class MainFeatures extends Component {
                 </Col>
                 <Col width="70%">
                     <p style={largeCopy}>
-                        Inherent technology designed with security controls to
-                        prevent against external threats, distributed key
-                        management system to safeguard from concentrated access,
-                        institutional grade policies and procedures to protect
-                        against human error.
+                    Our inherent technology is designed with security controls to prevent against external threats, distributed key management system to safeguard from concentrated access, and institutional grade policies &amp; procedures to protect against human error 
                     </p>
                 </Col>
+                </div>
             </Container>
         );
     }

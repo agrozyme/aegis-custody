@@ -3,10 +3,8 @@ import styled from "styled-components";
 
 const Section = styled.div`
     width: 100vw;
-    height: 60vh;
-    padding: 60px 30px;
+    padding: 135px 30px;
     box-sizing: border-box;
-    min-height: 60vh;
     background: #f4f4f4;
     display: flex;
     align-items: center;
@@ -22,7 +20,7 @@ const EndorsementsInner = styled.div`
 
     h2 {
         margin: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     div {
@@ -33,7 +31,7 @@ const EndorsementsInner = styled.div`
 
     div img {
         width: auto;
-        height: 40px;
+        height: 90px;
         margin: 30px 10px;
 
         @media (max-width: 1000px) {
@@ -49,8 +47,8 @@ class Sponsors extends Component {
                 <EndorsementsInner>
                     <h2>Trusted and backed by</h2>
                     <div data-uk-scrollspy="target: > img; cls:uk-animation-fade; delay: 200">
-                        <img src="./images/endorsements/1.png" alt="" />
-                        <img src="./images/endorsements/6.png" alt="" />
+                        <img style={{margin: "30px"}} src="./images/logos1.png" alt="" />
+                        <img style={{margin: "30px"}} src="./images/logos2.png" alt="" />
                     </div>
                 </EndorsementsInner>
             </Section>
