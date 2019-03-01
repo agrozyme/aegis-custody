@@ -54,6 +54,7 @@ const SquresCont = styled.div`
 
     @media (max-width: 1000px) {
         display: none;
+        transform: translateX(50%)
     }
 `;
 

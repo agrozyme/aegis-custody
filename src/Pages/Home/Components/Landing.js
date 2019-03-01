@@ -48,6 +48,11 @@ const LeaderContent = styled.div`
 
 const TextCont = styled.div`
      margin-top: 35vh;
+
+     @media (max-width: 1000px) {
+         margin-top: 100px
+     }
+
 `;
 
 const LeaderTitle = styled.h1`
@@ -79,11 +84,11 @@ const LeaderSubtitle = styled.h3`
 `;
 
 const LeaderLine = styled.div`
-    height: 3px;
-    background: #ff6a5f;
-    width: 100%;
-    z-index: 0;
-    margin: 15px 0px;
+    // height: 3px;
+    // background: #ff6a5f;
+    // width: 100%;
+    // z-index: 0;
+    // margin: 15px 0px;
 `;
 
 const CallToAction = styled.div`
@@ -105,6 +110,10 @@ const CallToAction = styled.div`
         cursor: pointer;
         text-decoration: none;
     }
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `;
 
 const MountainBG = styled.div`
@@ -113,7 +122,7 @@ const MountainBG = styled.div`
     position: absolute;
     left: 0px;
     bottom: 0px;
-    background-image: url("./images/mountain-bg.png");
+    background-image: url("./images/mountains11.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;

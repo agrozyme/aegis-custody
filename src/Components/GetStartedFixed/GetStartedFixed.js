@@ -16,7 +16,14 @@ const Btn = styled.button`
     cursor: pointer;
     z-index: 100;
     display: none;
-    box-shadow: 0 3px 5px rgba(0,0,0,.2)
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+
+    @media (max-width: 1000px) {
+        bottom: 50px;
+        text-align: center;
+        right: 50%;
+        transform: translate(50%)
+    }
 `;
 
 class GetStartedFixed extends Component {

@@ -62,21 +62,22 @@ class MultilayerInfo extends Component {
                 <Content>
                     <Row data-uk-scrollspy="target: > .multilayerInfoBox; cls:uk-animation-fade; delay: 200">
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-21.png" alt="" style={MultilayerImages}/>
                             <p>
-                            Our Multisignature technology (“Multisig”) provides security against attacks and tolerance for losing access to a key(s) and our distributed key management system eliminating single points of failure
+                            Our Multisignature (“Multisig”) provides security against attacks and tolerance for losing access to a key
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-21.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
                             <p>
-                            Account level protections can be set up with withdrawal thresholds, pre-approved whitelisting of specific addresses adding additional layer of protection
+                            Account level protections can be set up with withdrawal thresholds, pre-approved whitelisting of specific addresses adding extra layer of protection
+
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
                         <img src="./images/icons-16.png" alt="" style={MultilayerImages}/>
                             <p>
-                            Streamlined customer onboarding process from account setup to activation via web and desktop application
+                            Simple and streamlined customer onboarding process from account setup to activation with customer support
                             </p>
                         </div>
                     </Row>

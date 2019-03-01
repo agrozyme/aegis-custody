@@ -35,7 +35,8 @@ const EndorsementsInner = styled.div`
         margin: 30px 10px;
 
         @media (max-width: 1000px) {
-            height: 30px;
+            height: 80px;
+            margin: 10px;
         }
     }
 `;

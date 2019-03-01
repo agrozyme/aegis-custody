@@ -135,7 +135,7 @@ class DesignPhilosophy extends Component {
     render() {
         return (
             <div id="section2" style={{minHeight: "500px", minWidth: "100vw", padding: "90px 0 20px", boxShadow: "0px 5px 10px rgba(0,0,0,.2"}}>
-                <div>
+                <div style={{margin: "0 15px"}}>
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}><img style={{maxHeight: "100px"}} src="./images/icons-20.png"></img></div>
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
                         <div style={{margin: "45px 15px 15px 15px", maxWidth: "600px", fontSize: "20px", textAlign: "center"}}>

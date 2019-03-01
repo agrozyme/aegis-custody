@@ -34,32 +34,11 @@ const Desktop = styled.div`
     text-align: center;
 
     @media (max-width: 1000px) {
-        display: none;
-    }
-`;
-
-const Mobile = styled.div`
-    width: 100vw;
-    min-height: 100vh;
-    color: #fff;
-    position: relative;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 106, 95, 1) 0%,
-        rgba(157, 209, 241, 1) 100%
-    );
-    padding: 65px 30px 75px 30px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    text-align: center;
-
-    @media (max-width: 1000px) {
-        display: flex;
-    }
-    div div {
-        justify-content: space-around;
+        .renderBox {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 `;
 
@@ -159,10 +138,10 @@ class ProductPreview extends Component {
                         </p>
                     </Header>
 
-                    <div style={{ display: "flex", justifyContent: "center", color: "white" }} >
-                        <div className="supportedCoins" style={{ margin: "15px", display: "flex", alignContent: "center" , maxWidth: "250px", flexWrap: "wrap"}}>
+                    <div className={"renderBox"} style={{ display: "flex", justifyContent: "center", color: "white" }} >
+                        <div className="supportedCoins" style={{ margin: "15px", display: "flex", alignContent: "center", maxWidth: "250px", flexWrap: "wrap" }}>
                             <p style={{ minWidth: "100%", margin: "0 0 15px 0" }}>We Currently Support</p>
-                            <div style={{minWidth: "100%",  display: "flex", justifyContent: "center" }}>
+                            <div style={{ minWidth: "100%", display: "flex", justifyContent: "center" }}>
                                 <img style={{ maxHeight: "50px", margin: "10px" }} src="./images/coin-1.png" alt="" />
                                 <img style={{ maxHeight: "50px", margin: "10px" }} src="./images/coin-2.png" alt="" />
                                 <img style={{ maxHeight: "50px", margin: "10px" }} src="./images/coin-3.png" alt="" />
@@ -171,16 +150,16 @@ class ProductPreview extends Component {
                         <div className="productImage" style={{ margin: "15px", }}>
                             <img style={{ maxHeight: "300px" }} src="./images/mockuprenders-5.png"></img>
                         </div>
-                        <div className="keyFeatures" style={{ margin: "15px", maxWidth: "250px", display: "flex", alignContent: "center", height: "300px", flexWrap: "wrap"}}>
-                            <div style={{minWidth: "100%", marginBottom: "15px"}}>
-                                <img style={{maxHeight: "65px",}} src="./images/icons-27.png"></img>
-                                <p style={{margin: "0"}}>Multisig access and security</p>
+                        <div className="keyFeatures" style={{ margin: "15px", maxWidth: "250px", display: "flex", alignContent: "center", height: "300px", flexWrap: "wrap" }}>
+                            <div style={{ minWidth: "100%", marginBottom: "15px" }}>
+                                <img style={{ maxHeight: "65px", }} src="./images/icons-27.png"></img>
+                                <p style={{ margin: "0" }}>Multisig access and security</p>
                             </div>
-                            <div style={{minWidth: "100%",}}>
-                                <img style={{maxHeight: "65px", }} src="./images/icons-22.png"></img>
-                                <p style={{margin: "0"}}>Distributed and tiered key management system</p>
+                            <div style={{ minWidth: "100%", }}>
+                                <img style={{ maxHeight: "65px", }} src="./images/icons-22.png"></img>
+                                <p style={{ margin: "0" }}>Distributed and tiered key management system</p>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -230,32 +209,6 @@ class ProductPreview extends Component {
                         </KeyFacts>
                     </div> */}
                 </Desktop>
-
-                <Mobile>
-                    <Title>Aegis Custody Wallet</Title>
-                    <img src="./images/key-horizontal.png" alt="" />
-                    <br />
-                    <Icons src="./images/key-fact-2.png" alt="" />
-                    <p>Multisig access and security</p>
-                    <br />
-                    <Icons src="./images/key-fact-3.png" alt="" />
-                    <p style={{ marginBottom: "30px" }}>
-                        Distributed and tiered key
-                        <br />
-                        management system
-                    </p>
-
-                    <div>
-                        <KeyFacts support={true}>
-                            <p>We Currently Support</p>
-                        </KeyFacts>
-                        <KeyFacts coin={true}>
-                            <img src="./images/coin-1.png" alt="" />
-                            <img src="./images/coin-2.png" alt="" />
-                            <img src="./images/coin-3.png" alt="" />
-                        </KeyFacts>
-                    </div>
-                </Mobile>
             </Section>
         );
     }

@@ -13,6 +13,11 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     @media (max-width: 1000px) {
         padding: 50px 25px;
         background: #fff;
@@ -46,7 +51,7 @@ const ContentImageWrap = {
 }
 
 const ContentBox = {
-    maxWidth: "350px",
+    maxWidth: "370px",
     margin: "20px 30px"
 }
 
@@ -59,11 +64,11 @@ class WorkflowDiagram extends Component {
                 <div style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-19.png" style={ContentImages}></img></div>
-                        <p>Operational work flows are designed to include controls and policies with multiple approvals and any fund transfers require approval from pre-approved designated roles</p>
+                        <p>All private keys are stored on the chip set and our distributed key management system eliminates single points of failure</p>
                     </div>
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-17.png" style={ContentImages}></img></div>
-                        <p>All private keys are generated and stored in our proprietary hardware device and the business rules are burnt into the chip </p>
+                        <p>Operational work flows are designed to include controls for funds transfers with designated role access</p>
                     </div>
                 </div>
             </Container>

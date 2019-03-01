@@ -2,49 +2,15 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-    height: auto;
-    min-height: 80vh;
-    background: linear-gradient(
-        to bottom,
-        rgba(248, 248, 248, 1) 0%,
-        rgba(131, 195, 234, 1) 100%
-    );
-    position: relative;
+
 `;
 
 const LineLayer = styled.div`
-    position: relative;
-    top: 0px;
-    left: 0px;
-    min-height: 80vh;
-    width: 100%;
 
-    background: url("/images/bg-line-yellow.png");
-    background-repeat: no-repeat;
-    background-position: 85% 0px;
-    background-size: 2px 100%;
-
-    @media (max-width: 800px) {
-        background: none;
-    }
 `;
 
 const MountainLayer = styled.div`
-    position: relative;
-    top: 0px;
-    left: 0px;
-    min-height: 80vh;
-    width: 100%;
-
-    background: url("/images/mountain-bg-2.png");
-    background-repeat: no-repeat;
-    background-position: center -40%;
-    background-size: cover;
-
-    @media (max-width: 800px) {
-        background-size: 120%;
-        background-position: center bottom;
-    }
+   
 `;
 
 const ContentLayer = styled.div`
@@ -53,6 +19,9 @@ const ContentLayer = styled.div`
     height: 100%;
     justify-content: center;
 
+    @media (max-width: 1000px){
+        flex-direction: column;
+    }
 `;
 
 const UserStoryBox = {
