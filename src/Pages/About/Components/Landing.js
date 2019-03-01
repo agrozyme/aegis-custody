@@ -7,7 +7,7 @@ const Container = styled.div`
     min-height: 700px;
     width: 100vw;
     overflow: auto;
-    background: url(./images/bridge2.jpg);
+    background: url(./images/bridge3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,6 +17,7 @@ const Container = styled.div`
 
 const ContentContainer = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -34,20 +35,6 @@ const ContentContainer = styled.div`
 
     div {
         margin-top: -50px;
-    }
-`;
-
-const SquresCont = styled.div`
-    margin-top: -50px;
-    margin-right: 100px;
-
-    img {
-        max-width: 300px;
-    }
-
-    @media (max-width: 1000px) {
-        display: none;
-        transform: translateX(50%)
     }
 `;
 
@@ -71,8 +58,9 @@ class Landing extends Component {
                                 alt=""
                             />
                         </SquresCont> */}
+                        <div style={{minHeight: "120px"}}></div>
                         <div style={{textAlign: "center", maxWidth: "800px" }}>
-                            <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "white"}}>Our vision is to build<br></br>the future of value</h2>
+                            <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "white"}}>Our Vision is to Build<br></br>the Future of Value</h2>
                             <a style={{textDecoration: "none"}}href="#ourTeam" data-uk-scroll="true"><p style={{color: "#FF6A5F",}}>Our Team</p></a>
                         </div>
                     </ContentContainer>

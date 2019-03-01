@@ -10,7 +10,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 800px;
-    //display background line
+    //display background line;
     ${props =>
         props.bgLine &&
         `
@@ -25,6 +25,8 @@ const LeaderInner = styled.div`
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3082b3+0,9fdfff+100 */
     background: linear-gradient(
         to bottom,
@@ -39,18 +41,16 @@ const LeaderContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 50 !important;
 
-    /* @media (max-width: 1000px) {
-         justify-content: flex-start;
-         padding-top: 20%;
-     } */
+
 `;
 
 const TextCont = styled.div`
      margin-top: 35vh;
 
      @media (max-width: 1000px) {
-         margin-top: 100px
+         margin-top: 10px;
      }
 
 `;
@@ -60,12 +60,20 @@ const LeaderTitle = styled.h1`
     color: #fff;
     z-index: 3;
     margin: 0 0 0 60px;
-    
+    margin-left: 60px;
+
     @media (max-width: 1255px) {
         font-size: 3em;
     }
     @media (max-width: 600px) {
         font-size: 1.8em;
+    }
+
+
+    @media (min-width: 1400px){
+        margin-left: 15vh;
+        width: calc(100% - 15vh);
+        overflow: hidden;
     }
 `;
 
@@ -77,18 +85,18 @@ const LeaderSubtitle = styled.h3`
     margin-bottom: 15px;
     font-family: ingra, sans-serif;
     font-weight: 400;
+    margin-left: 60px;
 
     @media (max-width: 1000px) {
         font-size: 1em;
     }
-`;
 
-const LeaderLine = styled.div`
-    // height: 3px;
-    // background: #ff6a5f;
-    // width: 100%;
-    // z-index: 0;
-    // margin: 15px 0px;
+
+    @media (min-width: 1400px){
+        margin-left: 15vh;
+        width: calc(100% - 15vh);
+        overflow: hidden;
+    }
 `;
 
 const CallToAction = styled.div`
@@ -129,9 +137,10 @@ const MountainBG = styled.div`
     z-index: 0;
 
     @media (max-width: 1000px) {
-        height: 45%;
-        background-position: 70% top;
+        background-image: url("./images/mountainmobile.png");
+        z-index: 0 !important;
     }
+
 `;
 
 class Landing extends Component {
@@ -142,13 +151,13 @@ class Landing extends Component {
                     <Menu dark={true}/>
                     <LeaderContent>
                         <TextCont>
-                            <LeaderTitle style={{color: "#353535", marginLeft: "60px"}}>
+                            <LeaderTitle style={{color: "#353535", }}>
                                 Institutional
                                 <br />
                                 Digital Asset Custody
                             </LeaderTitle>
                             {/* <LeaderLine /> */}
-                            <LeaderSubtitle style={{color: "#353535", marginLeft: "60px"}}>
+                            <LeaderSubtitle style={{color: "#353535",}}>
                                 Bringing you secure and simple storage
                             </LeaderSubtitle>
                         </TextCont>
@@ -168,7 +177,7 @@ class Landing extends Component {
                             </a>
                         </CallToAction>
                     </LeaderContent>
-                    <MountainBG className="animated fadeInUp fast" />
+                    <MountainBG className="animated fadeInUp fast" style={{zIndex: "0"}} />
                 </LeaderInner>
             </Container>
         );

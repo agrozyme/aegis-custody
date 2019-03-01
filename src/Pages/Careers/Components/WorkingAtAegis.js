@@ -8,6 +8,15 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    h2 {
+        @media (max-width: 1000px) {
+            font-size: 35px !important;
+            line-height: 45px !important;
+            padding: 25px !important;
+            overflow: hidden;
+        } 
+    }
 `;
 
 class WorkingAtAegis extends Component {

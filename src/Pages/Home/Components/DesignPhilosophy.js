@@ -139,7 +139,7 @@ class DesignPhilosophy extends Component {
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}><img style={{maxHeight: "100px"}} src="./images/icons-20.png"></img></div>
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
                         <div style={{margin: "45px 15px 15px 15px", maxWidth: "600px", fontSize: "20px", textAlign: "center"}}>
-                            <p>Safeguarding digital assets is risky because of the complexity of cryptographic systems. Custody solutions enabled hackers to steal an average of $2.7m worth of cryptocurrency every day of 2018</p>
+                            <p>Safeguarding digital assets is risky because of the complexity of cryptographic systems. Custody solutions enabled hackers to steal an average of $2.7m worth of cryptocurrency every day of 2018.</p>
                         </div>
                     </div>
                     <div style={{border: "2px solid #FF6A5F", maxWidth: "550px", margin: "30px auto 0", padding: "30px", fontSize: "25px", textAlign: "center"}}><p style={{margin: "0px"}}> Aegis Custody secures digital assets with an intuitive combination of cold storage hardware, multisig wallets, and quorum based approvals</p></div>

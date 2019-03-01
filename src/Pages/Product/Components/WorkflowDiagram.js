@@ -55,13 +55,20 @@ const ContentBox = {
     margin: "20px 30px"
 }
 
+const WFBox = styled.div`
+    @media (max-width: 1000px) {
+        flex-direction: column
+    }
+`
+
+
 class WorkflowDiagram extends Component {
     render() {
         return (
             <Container>
-                <h1>Workflow</h1>
+                <h1>Asset Flow</h1>
                 <img src="./images/user-flow.png" alt="" />
-                <div style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
+                <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-19.png" style={ContentImages}></img></div>
                         <p>All private keys are stored on the chip set and our distributed key management system eliminates single points of failure</p>
@@ -70,7 +77,7 @@ class WorkflowDiagram extends Component {
                         <div style={ContentImageWrap}><img src="./images/icons-17.png" style={ContentImages}></img></div>
                         <p>Operational work flows are designed to include controls for funds transfers with designated role access</p>
                     </div>
-                </div>
+                </WFBox>
             </Container>
         );
     }

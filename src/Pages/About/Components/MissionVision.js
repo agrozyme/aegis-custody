@@ -2,20 +2,23 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-    /* min-height: 60vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    padding: 70px 0;
     text-align: center;
     h1 {
         font-family: gotham_book;
     }
 
+    h2 {
+        padding: 70px 30px 0 20px
+    }
+    
+    p{
+        padding: 0 30px 70px;
+    }
+
     @media (max-width: 1000px) {
-        padding: 20px 30px;
     }
 `;
 

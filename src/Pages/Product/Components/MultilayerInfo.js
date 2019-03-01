@@ -29,6 +29,9 @@ const Content = styled.div`
 const Row = styled.div`
     display: flex;
     justify-content: center;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
     div {
         width: 350px;
         box-sizing: border-box;

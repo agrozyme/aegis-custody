@@ -6,11 +6,17 @@ import { Link, RichText, Date } from "prismic-reactjs";
 const Container = styled.div`
     max-width: 800px;
     margin: 100px auto;
+    padding: 25px;
 `;
 
 const JobCont = styled.div`
     margin-bottom: 30px;
     margin-left: 60px;
+
+    @media (max-width: 1000px) {
+        margin-left: 0
+    }
+
 `;
 
 const ApplyLink = styled.a`
