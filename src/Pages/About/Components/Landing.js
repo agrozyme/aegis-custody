@@ -4,10 +4,10 @@ import styled from "styled-components";
 import Menu from "../../../Components/Menu";
 
 const Container = styled.div`
-    height: 100vh;
+    min-height: 700px;
     width: 100vw;
     overflow: auto;
-    background: #3082b3;
+    background: url(./images/bridge2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,19 +21,12 @@ const ContentContainer = styled.div`
     justify-content: center;
     color: #fff;
     height: 100%;
+    min-height: 700px;
 
     @media (max-width: 600px) {
         height: 100%;
     }
     padding: 0px 20px;
-
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0) 65%,
-        rgba(255, 255, 255, 0) 76%,
-        rgba(255, 255, 255, 1) 100%
-    );
 
     h2 {
         color: #fff;

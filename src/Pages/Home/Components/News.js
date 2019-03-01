@@ -19,7 +19,6 @@ class News extends Component {
                     <div style={NewsBox}><h3 style={{ margin: 0, fontSize: "25px" }}>Best Wallet Award</h3><p>Now equipped with seventh-generation Intel Core processors, MacBook is snappier than ever.</p><a style={{ color: "#ff6a5f" }} href="#">READ MORE</a></div>
                     <div style={NewsBox}><h3 style={{ margin: 0, fontSize: "25px" }}>Best Wallet Award</h3><p>Now equipped with seventh-generation Intel Core processors, MacBook is snappier than ever.</p><a style={{ color: "#ff6a5f" }} href="#">READ MORE</a></div>
                     <div style={NewsBox}><h3 style={{ margin: 0, fontSize: "25px" }}>Best Wallet Award</h3><p>Now equipped with seventh-generation Intel Core processors, MacBook is snappier than ever.</p><a style={{ color: "#ff6a5f" }} href="#">READ MORE</a></div>   
-            
         </div>
 
 
