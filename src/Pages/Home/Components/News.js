@@ -64,15 +64,22 @@ const NewsStory = styled.div`
     }
 `
 
+const Arrow = styled.div`
+    height: 40px;
+    min-width: 40px;
+    margin: 10px;
+    background-image: url(./images/arrowleft.png);
+    background-size: contain;
+`
+
 class News extends Component {
     render() {
         return (
-            <div style={{ padding: "70px 40px", overflow: "hidden", maxWidth: "80%", margin: "0 auto" }}>
+            <div style={{ padding: "70px 40px", overflow: "hidden", maxWidth: "80%", margin: "0 auto", display: "flex", alignItems: "center" }}>
+                <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
                 <div style={{ display: "flex", overflow: "scroll" }}>
-
-
                 {Stories.map((red, i) => (
-                        <NewsStory key={i}>
+                        <NewsStory key={i} id={"newsstory"+i}>
                             <h3>{red.headline}</h3>
                             <p>{red.date}</p>
                             <p>{red.description}</p>
@@ -80,7 +87,7 @@ class News extends Component {
                         </NewsStory>
                     ))}
                 </div>
-
+                <a href="#newsstory5"><Arrow href="#newsstory1" style={{backgroundImage: "url(./images/arrowright.png)"}}></Arrow></a>
             </div>
         );
     }

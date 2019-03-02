@@ -51,6 +51,12 @@ const Employees = [
         title: "CTO",
         linkedIn: "https://www.linkedin.com/in/%E5%86%A0%E5%BD%B0-%E5%82%85-71673472"
     },
+    {
+        name: "Jason Doll",
+        picture: "",
+        title: "Head of Trading",
+        linkedIn: "https://www.linkedin.com/mynetwork/invite-sent/jason-doll-b8aa742b/?isSendInvite=true"
+    },
         {
         name: "Waterball Liu",
         picture: "",
@@ -115,9 +121,10 @@ class OurTeam extends Component {
                 </p>
                 <Container>
                     {Employees.map((employee, i) => (
-                        <Card key={i}>
-                            <LinkedIn><a href={employee.linkedIn} style={{textDecoration: "none"}}><h3 style={{ marginTop: "20px", marginBottom: "10px", textAlign: "center" }}>{employee.name}</h3></a></LinkedIn>
+                        <Card key={i}><div data-uk-scrollspy="target: > .linkedIn; cls:uk-animation-fade; delay: 500">
+                            <LinkedIn className="linedIn"><a href={employee.linkedIn} style={{textDecoration: "none"}}><h3 style={{ marginTop: "20px", marginBottom: "10px", textAlign: "center" }}>{employee.name}</h3></a></LinkedIn>
                             <p style={{ margin: "0", textAlign: "center" }}>{employee.title}</p>
+                            </div>
                         </Card>
                     ))} 
                 </Container>

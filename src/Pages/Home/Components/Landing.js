@@ -19,6 +19,9 @@ const Container = styled.div`
         background-position: 130px 0px;
         background-size: 2px 100%;
     `}
+    @media (max-width: 1000px) {
+        height: 500px;
+    }
 `;
 
 const LeaderInner = styled.div`
@@ -43,6 +46,9 @@ const LeaderContent = styled.div`
     justify-content: space-around;
     z-index: 50 !important;
 
+    @media (max-width: 1000px) {
+        height: 500px;
+    }
 
 `;
 
@@ -50,7 +56,8 @@ const TextCont = styled.div`
      margin-top: 35vh;
 
      @media (max-width: 1000px) {
-         margin-top: 10px;
+         margin-top: 10px !important;
+         margin-left: 0 !important;
      }
 
 `;
@@ -65,9 +72,11 @@ const LeaderTitle = styled.h1`
     @media (max-width: 1255px) {
         font-size: 3em;
     }
-    @media (max-width: 800px) {
+
+    @media (max-width: 1000px) {
         font-size: 35px;
         margin-bottom: 5px;
+        margin-left: 40px;
     }
 
 
@@ -90,6 +99,7 @@ const LeaderSubtitle = styled.h3`
 
     @media (max-width: 1000px) {
         font-size: 20px;
+        margin-left: 40px;
     }
 
 
@@ -140,6 +150,10 @@ const MountainBG = styled.div`
     @media (max-width: 1000px) {
         background-image: url("./images/mountainmobile.png");
         z-index: 0 !important;
+
+        h1{
+            margin-left: 0 !important
+        }
     }
 
 `;
