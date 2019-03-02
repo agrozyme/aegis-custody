@@ -115,6 +115,17 @@ const KeyFacts = styled.div`
     }
 `;
 
+const ProductImage = styled.div`
+
+    img { max-height: 300px; }
+
+    .productImage:hover {
+        .imagesrc {
+            margin: 0 20px;
+        }
+    }
+`
+
 const Title = styled.h2`
     color: #fff;
     margin: 0px 0px 50px 0px;
@@ -127,6 +138,7 @@ const Icons = styled.img`
 class ProductPreview extends Component {
     render() {
         return (
+
             <Section keyPage={true}>
                 <Desktop>
                     <Header>
@@ -147,9 +159,11 @@ class ProductPreview extends Component {
                                 <img style={{ maxHeight: "50px", margin: "10px" }} src="./images/coin-3.png" alt="" />
                             </div>
                         </div>
-                        <div className="productImage" style={{ margin: "15px", }}>
-                            <img style={{ maxHeight: "300px" }} src="./images/mockuprenders-5.png"></img>
-                        </div>
+                        <ProductImage className="productImage" style={{ margin: "15px", }}>
+                            <a href="/product">
+                                <img className="imagesrc" src="./images/mockuprenders-5.png"></img>
+                            </a>
+                        </ProductImage>
                         <div className="keyFeatures" style={{ margin: "15px", maxWidth: "250px", display: "flex", alignContent: "center", height: "300px", flexWrap: "wrap" }}>
                             <div style={{ minWidth: "100%", marginBottom: "15px" }}>
                                 <img style={{ maxHeight: "65px", }} src="./images/icons-27.png"></img>
@@ -162,52 +176,6 @@ class ProductPreview extends Component {
 
                         </div>
                     </div>
-
-
-
-
-
-                    {/* <Container>
-                        <Col width="55%" style={{minHeight: "400px"}}>
-                            <KeyImg
-                                src="./images/key-shadow.png"
-                                alt="shadow"
-                                data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; offset-top: -300"
-                            />
-                            <KeyImg
-                                src="./images/key.png"
-                                alt="key"
-                                data-uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; offset-top: -300"
-                            />
-                        </Col>
-                        <Col
-                            width="45%"
-                            data-uk-scrollspy="cls: uk-animation-slide-right; repeat: true; offset-top: -200" style={{ display: "flex", alignItems: "center", height: "100%", minHeight: "400px", marginLeft: "0px"}}
-                        >
-                            <KeyFacts>
-                                <img src="./images/key-fact-2.png" alt="" />
-                                <p>Multisig access and security</p>
-                            </KeyFacts>
-                            <KeyFacts>
-                                <img src="./images/key-fact-3.png" alt="" />
-                                <p style={{ textAlign: "left" }}>
-                                    Distributed and tiered key
-                                    <br />
-                                    management system
-                                </p>
-                            </KeyFacts>
-                        </Col>
-                    </Container>
-                    <div>
-                        <KeyFacts support={true}>
-                            <p>We Currently Support</p>
-                        </KeyFacts>
-                        <KeyFacts coin={true}>
-                            <img src="./images/coin-1.png" alt="" />
-                            <img src="./images/coin-2.png" alt="" />
-                            <img src="./images/coin-3.png" alt="" />
-                        </KeyFacts>
-                    </div> */}
                 </Desktop>
             </Section>
         );
