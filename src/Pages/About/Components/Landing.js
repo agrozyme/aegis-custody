@@ -11,6 +11,11 @@ const Container = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (max-width: 1000px) {
+        background: url(./images/bridge2mobile.jpg);
+    }
+
 `;
 
 //     background: url("/images/about-leader.png");
@@ -31,6 +36,16 @@ const ContentContainer = styled.div`
 
     h2 {
         color: #fff;
+    }
+
+    @media (max-width: 1000px) {
+
+
+        h2 {
+            font-size: 30px !important;
+            line-height: 40px !important;
+        }
+
     }
 
     div {

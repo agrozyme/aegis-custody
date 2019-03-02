@@ -168,6 +168,15 @@ class Menu extends Component {
                             <li className="mobileNavItem">
                                 <Link
                                     style={mobileNavItem}
+                                    to="/about"
+                                    data-uk-toggle="target: #slideNav"
+                                >
+                                    News
+                                </Link>
+                            </li>
+                            <li className="mobileNavItem">
+                                <Link
+                                    style={mobileNavItem}
                                     to="/careers"
                                     data-uk-toggle="target: #slideNav"
                                 >
@@ -175,25 +184,6 @@ class Menu extends Component {
                                 </Link>
                             </li>
                         </ul>
-                        <p
-                            style={{
-                                position: "absolute",
-                                bottom: "5px",
-                                textAlign: "center"
-                            }}
-                        >
-                            <img
-                                style={{ height: "50px", marginBottom: "8px" }}
-                                src="./images/footer-logo-1.png"
-                                alt=""
-                            />
-                            <br />
-                            Safe. Secure. Simple.
-                            <br />
-                            San Francisco, CA USA
-                            <br />
-                            Copyright &copy; 2019. All Rights Reserved.
-                        </p>
                     </div>
                 </div>
 

@@ -65,8 +65,9 @@ const LeaderTitle = styled.h1`
     @media (max-width: 1255px) {
         font-size: 3em;
     }
-    @media (max-width: 600px) {
-        font-size: 1.8em;
+    @media (max-width: 800px) {
+        font-size: 35px;
+        margin-bottom: 5px;
     }
 
 
@@ -88,7 +89,7 @@ const LeaderSubtitle = styled.h3`
     margin-left: 60px;
 
     @media (max-width: 1000px) {
-        font-size: 1em;
+        font-size: 20px;
     }
 
 

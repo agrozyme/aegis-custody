@@ -20,7 +20,7 @@ const Container = styled.div`
 
 const Card = styled.div`
     min-width: 250px;   
-    margin: 20px 20px 40px 20px;
+    margin: 15px 15px 20px 15px;
     max-width: 200px;
 `;
 
@@ -46,34 +46,28 @@ const Employees = [
         linkedIn: "linkedin.com"
     },
     {
-        name: "Serra Wei",
+        name: "Frank Fu",
         picture: "",
-        title: "Founder & CEO",
-        linkedIn: "linkedin.com"
+        title: "CTO",
+        linkedIn: "https://www.linkedin.com/in/%E5%86%A0%E5%BD%B0-%E5%82%85-71673472"
     },
         {
-        name: "Serra Wei",
+        name: "Waterball Liu",
         picture: "",
-        title: "Founder & CEO",
+        title: "Technical Marketing",
         linkedIn: "linkedin.com"
     },
     {
-        name: "Serra Wei",
+        name: "Sean Chuang",
         picture: "",
-        title: "Founder & CEO",
-        linkedIn: "linkedin.com"
+        title: "Engineer",
+        linkedIn: "https://www.linkedin.com/in/sean-chuang-b0aa1a110/"
     },
         {
-        name: "Serra Wei",
+        name: "Patrick Baron",
         picture: "",
-        title: "Founder & CEO",
-        linkedIn: "linkedin.com"
-    },
-    {
-        name: "Serra Wei",
-        picture: "",
-        title: "Founder & CEO",
-        linkedIn: "linkedin.com"
+        title: "Advisor",
+        linkedIn: "https://www.linkedin.com/in/patricknbaron"
     },
 ]
 

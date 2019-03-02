@@ -57,7 +57,13 @@ const ContentBox = {
 
 const WFBox = styled.div`
     @media (max-width: 1000px) {
-        flex-direction: column
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .workflowBox {
+            width: 100% !important;
+
+        }
     }
 `
 

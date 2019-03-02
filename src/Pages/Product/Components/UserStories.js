@@ -18,15 +18,27 @@ const ContentLayer = styled.div`
     width: 100%;
     height: 100%;
     justify-content: center;
+    max-width: 450px;
 
     @media (max-width: 1000px){
         flex-direction: column;
+        
+        .userStoryBox {
+            flex-direction: column;
+        }
+
+        .userImage {
+            display: none
+        }
+
+        max-width: 100%;
+        
     }
 `;
 
 const UserStoryBox = {
     display: "flex",
-    maxWidth: "450px",
+
     color: "white",
     padding: "10px",
     margin: "10px"
@@ -38,8 +50,8 @@ class UserStories extends Component {
             <div style={{ backgroundColor: "#4D6A7C", padding: "70px 10px" }}>
                 <h1 style={{ textAlign: "center", color: "white" }}>User Stories</h1>
                 <ContentLayer  data-uk-scrollspy="target: > .userStoryBox; cls:uk-animation-fade; delay: 200">
-                    <div className="userStoryBox" style={UserStoryBox}>
-                        <img
+                    <div style={UserStoryBox}>
+                        <img className="userImage"
                             src="https://via.placeholder.com/50"
                             alt="" style={{ minHeight: "100px", height: "100px", minWidth: "100px", margin: "10px" }}
                         />
@@ -54,8 +66,8 @@ class UserStories extends Component {
                             risus.
                                 </p>
                     </div>
-                    <div className="userStoryBox" style={UserStoryBox}>
-                        <img
+                    <div style={UserStoryBox}>
+                        <img className="userImage"
                             src="https://via.placeholder.com/50"
                             alt="" style={{ minHeight: "100px", height: "100px", minWidth: "100px", margin: "5px 10px" }}
                         />
