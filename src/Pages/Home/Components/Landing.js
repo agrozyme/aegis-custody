@@ -45,7 +45,6 @@ const LeaderContent = styled.div`
     flex-direction: column;
     justify-content: space-around;
     z-index: 50 !important;
-
     @media (max-width: 1000px) {
         height: 500px;
         overflow: hidden;
