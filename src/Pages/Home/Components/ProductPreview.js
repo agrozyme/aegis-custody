@@ -92,7 +92,7 @@ class ProductPreview extends Component {
                                 <p style={{ margin: "0" }}>Multisig access and security</p>
                             </div>
                             <div style={{ minWidth: "100%", }}>
-                                <img style={{ maxHeight: "65px", }} src="./images/icons-22.png"></img>
+                                <img style={{ maxHeight: "65px", }} src="./images/icons-30.png"></img>
                                 <p style={{ margin: "0" }}>Distributed and tiered key management system</p>
                             </div>
 

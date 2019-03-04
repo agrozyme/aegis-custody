@@ -29,12 +29,13 @@ class App extends Component {
                 {/* <ScrollProgress /> */}
                 <GetStartedFixed />
                 <div id="contact-form" data-uk-modal="true">
+
                     <div className="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
-                    <button
-                                        className="uk-modal-close-default"
-                                        type="button"
-                                        data-uk-close="true"
-                                    />
+                        <button
+                            className="uk-modal-close-default"
+                            type="button"
+                            data-uk-close="true"
+                        />
                         <h2 className="uk-modal-title">Contact Us</h2>
                         <form
                             action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
@@ -135,6 +136,14 @@ class App extends Component {
                                 type="text"
                             />
                             <br />
+                            <label>Assets Under Management:</label>
+                            <input 
+                                className="uk-input uk-margin-bottom" 
+                                id="00N1U00000Ma1OS"
+                                name="00N1U00000Ma1OS"
+                                size="20" 
+                                type="text" />
+                                <br></br>
                             <input
                                 style={submitBtn}
                                 type="submit"

@@ -61,25 +61,54 @@ const Arrow = styled.div`
     margin: 10px;
     background-image: url(./images/arrowleft.png);
     background-size: contain;
+    @media (max-width: 1000px) {
+        display: none;
+    }
+`
+
+const NewsCont = styled.div`
+    @media(max-width: 1000px) {
+        width: calc(100vw-110px);
+    }
+`
+
+const ScrollTab = styled.div`
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+
+    @media (max-width: 1000px) {
+        display: flex;
+    }
+`
+
+const NewsSection = styled.div`
+    padding: 70px 40px;
+    @media (max-width: 1000px) {
+        padding: 30px 0;
+    }
 `
 
 class News extends Component {
     render() {
         return (
-            <div style={{ padding: "70px 40px", overflow: "hidden", maxWidth: "80%", margin: "0 auto", display: "flex", alignItems: "center" }}>
+            <NewsSection style={{overflow: "hidden", maxWidth: "80%", margin: "0 auto", display: "flex", alignItems: "center", position: "relative" }}>
                 <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
-                <div style={{ display: "flex", overflow: "scroll" }}>
-                {Stories.map((red, i) => (
-                        <NewsStory key={i} id={"newsstory"+i}>
-                            <h3>{red.headline}</h3>
-                            <p>{red.date}</p>
-                            <p>{red.description}</p>
-                            <a href={red.link}>READ MORE</a>
-                        </NewsStory>
-                    ))}
-                </div>
+                <NewsCont style={{ display: "flex", overflow: "scroll" }}>
+                    {Stories.map((red, i) => (
+                            <NewsStory key={i} id={"newsstory"+i}>
+                                <h3>{red.headline}</h3>
+                                <p>{red.date}</p>
+                                <p>{red.description}</p>
+                                <a href={red.link}>READ MORE</a>
+                            </NewsStory>
+                        ))}
+                </NewsCont>
                 <a href="#newsstory5"><Arrow href="#newsstory1" style={{backgroundImage: "url(./images/arrowright.png)"}}></Arrow></a>
-            </div>
+                <ScrollTab>Scroll right for more stories</ScrollTab>
+            </NewsSection>
         );
     }
 }

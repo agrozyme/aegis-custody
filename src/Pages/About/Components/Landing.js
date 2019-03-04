@@ -4,12 +4,12 @@ import styled from "styled-components";
 import Menu from "../../../Components/Menu";
 
 const Container = styled.div`
-    min-height: 700px;
+    min-height: 650px;
     width: 100vw;
     overflow: auto;
-    background: url(./images/bridge3.jpg);
+    background: url(./images/skyline2.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 
     @media (max-width: 1000px) {
@@ -67,18 +67,12 @@ class Landing extends Component {
         return (
             <div>
                 <Container>
-                    <Menu dark={false} />
+                    <Menu dark={true} />
                     <ContentContainer>
-                        {/* <SquresCont>
-                            <img
-                                src="./images/about-leader-squares.svg"
-                                alt=""
-                            />
-                        </SquresCont> */}
                         <div style={{minHeight: "120px"}}></div>
                         <div style={{textAlign: "center", maxWidth: "800px" }}>
-                            <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "white"}}>Our Vision is to Build<br></br>the Future of Value</h2>
-                            <p>We are on a mission to create the critical infrastructure for the rapidly growing digital assets markets by building custody technology, products and solutions</p>
+                            <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "#353535"}}>Our Vision is to Build<br></br>the Future of Value</h2>
+                            <p style={{color: "#353535"}}>We are on a mission to create the critical infrastructure for the rapidly growing digital assets markets by building custody technology, products and solutions</p>
                         </div>
                     </ContentContainer>
                 </Container>

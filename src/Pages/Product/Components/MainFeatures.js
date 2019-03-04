@@ -30,6 +30,13 @@ const Content = {
     p1: "Our inherent technology is designed with a core philosophy of ‘security first’ controls to prevent against external threats, distributed key management system to safeguard from concentrated access and attacks and institutional grade policies & procedures to protect against human error"
 }
 
+const Body = styled.div`
+margin-left: 50px
+    @media (max-width: 1000px) {
+        margin-left: 0;
+    }
+`
+
 class MainFeatures extends Component {
     render() {
         return (
@@ -45,9 +52,9 @@ class MainFeatures extends Component {
                         </div>
                         <div style={{textAlign: "center"}}><p style={{fontSize: "25px", margin: "0"}}>and more coming soon</p></div>
                     </Coins>
-                    <div style={{minWidth: "", marginLeft: "50px"}}>
+                    <Body style={{minWidth: ""}}>
                         <p style={{fontSize: "25px", margin: "0"}}>{Content.p1}</p>
-                    </div>
+                    </Body>
                 </ContentBox>
 
 

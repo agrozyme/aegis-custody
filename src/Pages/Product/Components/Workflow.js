@@ -54,32 +54,7 @@ class Workflow extends Component {
                         store their crypto and digital assets.
                     </p>
                 </div>
-                {/* <div id="video">
-                    <div
-                        style={{
-                            padding: "56.25% 0 0 0",
-                            marginBottom: "-40px",
-                            position: "relative"
-                        }}
-                    >
-                        <iframe
-                            title="demo"
-                            src="https://player.vimeo.com/video/75736121"
-                            style={{
-                                position: "absolute",
-                                top: "0",
-                                left: "0",
-                                width: "100%",
-                                height: "100%"
-                            }}
-                            frameBorder="0"
-                            webkitallowfullscreen="true"
-                            mozallowfullscreen="true"
-                            allowFullScreen
-                        />
-                    </div>
-                    <script src="https://player.vimeo.com/api/player.js" />
-                </div> */}
+
             </Container>
         );
     }

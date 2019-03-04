@@ -76,11 +76,11 @@ class WorkflowDiagram extends Component {
                 <img src="./images/user-flow.png" alt="" />
                 <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
-                        <div style={ContentImageWrap}><img src="./images/icons-19.png" style={ContentImages}></img></div>
+                        <div style={ContentImageWrap}><img src="./images/icons-21.png" style={ContentImages}></img></div>
                         <p>All private keys are stored on the chip set and our distributed key management system eliminates single points of failure</p>
                     </div>
                     <div className="workflowBox" style={ContentBox}>
-                        <div style={ContentImageWrap}><img src="./images/icons-17.png" style={ContentImages}></img></div>
+                        <div style={ContentImageWrap}><img src="./images/icons-23.png" style={ContentImages}></img></div>
                         <p>Operational work flows are designed to include controls for funds transfers with designated role access</p>
                     </div>
                 </WFBox>

@@ -13,7 +13,6 @@ const Row = {
 const Image = {
     height: "350px",
     width: "500px",
-    backgroundColor: "lightgray",
     margin: "20px"
 }
 
@@ -56,7 +55,7 @@ class CareersCopy extends Component {
             <div style={{paddingTop: "35px"}}>
                 <div style={Section}>
                     <RowSection style={Row}>
-                        <div className="careerImage" style={Image}></div>
+                        <div className="careerImage" style={Image} style={{height: "350px", width: "500px", margin: "20px", backgroundImage: "url(./images/careers1.jpeg)", backgroundSize: "cover", backgroundPosition:"center"}}></div>
                         <div style={Copy}>
                             <h3 style={{ margin: "0 0 15px 0" }}>Working at Aegis Custody</h3>
                             <p style={{ margin: "0" }}>We are a team of highly committed and passionate individuals bringing tremendous depth of experience, skills, and talents to develop the best infrastructure for the rapidly growing global digital assets market. We have taken up an important challenge and motivated to play a vital role in shaping the ecosystem. </p>
@@ -69,7 +68,7 @@ class CareersCopy extends Component {
                             <h3 style={{ margin: "0 0 15px 0" }}>Our Values</h3>
                             <p style={{ margin: "0" }}>We are building our culture carefully and deliberately. Our values are constantly in development to reflect our Aegis family’s values. However, the fundamentals don’t change - we aim to uphold to higher standards of excellence in every dimension - global mindset, respect for all, curious, fast-moving, learning, fun, committed. </p>
                         </div>
-                        <div className="careerImage" style={Image}></div>
+                        <div className="careerImage" style={{height: "350px", width: "500px", margin: "20px", backgroundImage: "url(./images/globe.jpeg)", backgroundSize: "cover", backgroundPosition:"center"}}></div>
                     </RowSection>
                 </div>
             </div>

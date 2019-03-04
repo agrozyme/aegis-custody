@@ -192,7 +192,7 @@ class Landing extends Component {
                             </a>
                         </CallToAction>
                     </LeaderContent>
-                    <MountainBG className="animated fadeInUp fast" style={{zIndex: "0"}} />
+                    <MountainBG style={{zIndex: "0"}} />
                 </LeaderInner>
             </Container>
         );

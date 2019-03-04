@@ -6,7 +6,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    align-items: center;
     padding: 70px 20px;
 
     max-width: calc(100%-40px)
@@ -27,11 +27,13 @@ class MissionVision extends Component {
         return (
             <div>
                 <Container>
+                    <img src="./images/icons-28.png" style={{height: "70px", width: "70px", marginBottom: "20px"}}></img>
                     <p style={{ maxWidth: "700px", margin: "0 auto" }}>
                         {Content.p1}
                     </p>
                 </Container>
                 <Container style={{ backgroundColor: "#f9f9f9" }}>
+                <img src="./images/icons-31.png" style={{height: "70px", width: "70px", marginBottom: "20px"}}></img>
                     <p style={{maxWidth: "700px", margin: "0 auto" }}>
                         {Content.p2}
                     </p>

@@ -76,19 +76,19 @@ class MultilayerInfo extends Component {
                 <KeyItems>
                     <Row data-uk-scrollspy="target: > .multilayerInfoBox; cls:uk-animation-fade; delay: 200">
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-21.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-25.png" alt="" style={MultilayerImages}/>
                             <p>
                                 {Content.p1}
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-32.png" alt="" style={MultilayerImages}/>
                             <p>
                                 {Content.p2}
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-16.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
                             <p>
                                 {Content.p3}
                             </p>

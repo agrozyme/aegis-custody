@@ -96,17 +96,17 @@ class Landing extends Component {
                 <ContentContainer>
                     <Copy>
                         <div style={{ minHeight: "80px" }}></div>
-                        <h1 style={{ width: "100%" }}>Custody Solution</h1>
+                        <h1 style={{ width: "100%", fontSize: "55px" }}>Custody Solution</h1>
                         <p>
                             {Content.p1}
                         </p>
                     </Copy>
                 </ContentContainer>
                 <ContentItems>
-                    <ContentRow style={ContentRowStyle} data-uk-scrollspy="target: > .contentBox; cls:uk-animation-fade; delay: 200" style={{ maxWidth: "1300px", margin: "0 auto", display: "flex" }}>
+                    <ContentRow style={ContentRowStyle} style={{ maxWidth: "1300px", margin: "0 auto", display: "flex" }}>
                         <ContentBox className="contentBox" style={ContentBoxStyle}>
                             <div style={LandingImageWrap}>
-                                <img src="./images/icons-13.png" alt="" style={LandingImages} />
+                                <img src="./images/icons-17.png" alt="" style={LandingImages} />
                             </div>
                             <h3 style={{ margin: "20px 10px 10px 10px" }}>Enhanced Security </h3>
                             <p style={{ padding: "0 25px" }}>
@@ -115,7 +115,7 @@ class Landing extends Component {
                         </ContentBox>
                         <ContentBox className="contentBox" style={ContentBoxStyle}>
                             <div style={LandingImageWrap}>
-                                <img src="./images/icons-14.png" alt="" style={LandingImages} />
+                                <img src="./images/icons-18.png" alt="" style={LandingImages} />
                             </div>
                             <h3 style={{ margin: "20px 10px 10px 10px" }}>Simple </h3>
                             <p style={{ padding: "0 25px" }}>
@@ -124,7 +124,7 @@ class Landing extends Component {
                         </ContentBox>
                         <ContentBox className="contentBox" style={ContentBoxStyle}>
                             <div style={LandingImageWrap}>
-                                <img src="./images/icons-15.png" alt="" style={LandingImages} />
+                                <img src="./images/icons-19.png" alt="" style={LandingImages} />
                             </div>
                             <h3 style={{ margin: "20px 10px 10px 10px" }}>Policy Controls </h3>
                             <p style={{ padding: "0 25px" }}>
