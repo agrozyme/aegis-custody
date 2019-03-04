@@ -72,7 +72,7 @@ class WorkflowDiagram extends Component {
     render() {
         return (
             <Container>
-                <h1>Asset Flow</h1>
+                <h1>Transaction Flow</h1>
                 <img src="./images/user-flow.png" alt="" />
                 <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>

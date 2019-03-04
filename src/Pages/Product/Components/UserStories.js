@@ -38,43 +38,11 @@ class UserStories extends Component {
     render() {
         return (
             <div style={{ backgroundColor: "#4D6A7C", padding: "70px 10px" }}>
-                <h1 style={{ textAlign: "center", color: "white" }}>User Stories</h1>
+                {/* <h1 style={{ textAlign: "center", color: "white" }}>User Stories</h1> */}
                 <ContentLayer  data-uk-scrollspy="target: > .userStoryBox; cls:uk-animation-fade; delay: 200">
 
+                    <p style={{color: "white", padding: "0 30px", maxWidth: "700px", margin: "0", fontSize: "25px", textAlign: "center"}}>Our self and custom custodian solutions are ideal for customers like exchanges, hedge funds, and institutions to securely store their crypto and digital assets</p>
 
-
-                    {/* <div className="userStoryBox">
-                        <img className="userImage"
-                            src="https://via.placeholder.com/50"
-                            alt="" style={{ minHeight: "100px", height: "100px", minWidth: "100px", margin: "10px" }}
-                        />
-                        <p style={{ margin: "0px 10px" }}>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Etiam porta sem malesuada
-                            magna mollis euismod. Praesent commodo
-                            cursus magna, vel scelerisque nisl
-                            consectetur et. Fusce dapibus, tellus ac
-                            cursus commodo, tortor mauris condimentum
-                            nibh, ut fermentum massa justo sit amet
-                            risus.
-                        </p>
-                    </div>
-                    <div className="userStoryBox">
-                        <img className="userImage"
-                            src="https://via.placeholder.com/50"
-                            alt="" style={{ minHeight: "100px", height: "100px", minWidth: "100px", margin: "5px 10px" }}
-                        />
-                        <p style={{ margin: "0px 10px" }}>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Etiam porta sem malesuada
-                            magna mollis euismod. Praesent commodo
-                            cursus magna, vel scelerisque nisl
-                            consectetur et. Fusce dapibus, tellus ac
-                            cursus commodo, tortor mauris condimentum
-                            nibh, ut fermentum massa justo sit amet
-                            risus.
-                        </p>
-                    </div> */}
                 </ContentLayer>
             </div>
 

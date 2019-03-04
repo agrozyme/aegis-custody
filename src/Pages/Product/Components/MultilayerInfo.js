@@ -45,14 +45,6 @@ const Row = styled.div`
     }
 `;
 
-const Diagram = {
-    width: "100%",
-    maxWidth: "900px",
-    backgroundColor: "lightgray",
-    minHeight: "360px",
-    margin: "40px auto"
-}
-
 const MultilayerImages = {
     height: "75px"
 }
@@ -63,19 +55,30 @@ const Content = {
     p3: "Simple and streamlined customer onboarding process from account setup to activation with designated account management"
 }
 
+const Diagram = styled.div`
+    background-image: url(./images/diagram1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    z-index: 200;
+    width: auto;
+    margin: 20px;
+`
 
 class MultilayerInfo extends Component {
     render() {
         return (
             <Container>
                 <h1>Multilayer Security</h1>
-                <div style={Diagram}></div>
+                <Diagram>
+                </Diagram>
                 <KeyItems>
                     <Row data-uk-scrollspy="target: > .multilayerInfoBox; cls:uk-animation-fade; delay: 200">
                         <div className="multilayerInfoBox">
                         <img src="./images/icons-21.png" alt="" style={MultilayerImages}/>
                             <p>
-                            {Content.p1}
+                                {Content.p1}
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
@@ -87,7 +90,7 @@ class MultilayerInfo extends Component {
                         <div className="multilayerInfoBox">
                         <img src="./images/icons-16.png" alt="" style={MultilayerImages}/>
                             <p>
-                            {Content.p3}
+                                {Content.p3}
                             </p>
                         </div>
                     </Row>

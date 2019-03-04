@@ -14,6 +14,8 @@ const Container = styled.div`
 
     @media (max-width: 1000px) {
         background: url(./images/bridge2mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 `;

@@ -20,7 +20,7 @@ const Container = styled.div`
         background-size: 2px 100%;
     `}
     @media (max-width: 1000px) {
-        height: 500px;
+        height: 300px;
     }
 `;
 
@@ -48,6 +48,7 @@ const LeaderContent = styled.div`
 
     @media (max-width: 1000px) {
         height: 500px;
+        overflow: hidden;
     }
 
 `;

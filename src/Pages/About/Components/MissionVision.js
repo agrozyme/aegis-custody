@@ -9,7 +9,10 @@ const Container = styled.div`
 
     padding: 70px 20px;
 
+    max-width: calc(100%-40px)
+
     @media (max-width: 1000px) {
+
     }
 `;
 
@@ -24,12 +27,12 @@ class MissionVision extends Component {
         return (
             <div>
                 <Container>
-                    <p style={{ maxWidth: "650px", margin: "0 auto" }}>
+                    <p style={{ maxWidth: "700px", margin: "0 auto" }}>
                         {Content.p1}
                     </p>
                 </Container>
-                <Container style={{ backgroundColor: "#f9f9f9", width: "100%" }}>
-                    <p style={{ marginTop: "0", maxWidth: "650px", margin: "0 auto" }}>
+                <Container style={{ backgroundColor: "#f9f9f9" }}>
+                    <p style={{maxWidth: "700px", margin: "0 auto" }}>
                         {Content.p2}
                     </p>
                 </Container>
