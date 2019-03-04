@@ -24,7 +24,7 @@ class WorkingAtAegis extends Component {
         return (
             <Container>
                 <h2 style={{textAlign: "center", color: "white", lineHeight: "65px", fontSize: "55px", color: "#353535"}}>Join Our Team to <br></br>Build the Future of Finance</h2>
-                <a style={{textDecoration: "none"}}href="#openPositions" data-uk-scroll="true"><p style={{color: "#FF6A5F",}}>See Open Positions</p></a>
+                <a style={{textDecoration: "none"}}href="#openPositions" data-uk-scroll="true"><p style={{color: "#FF6A5F",}}>Open Positions</p></a>
             </Container>
         );
     }

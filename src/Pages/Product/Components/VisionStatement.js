@@ -23,8 +23,7 @@ class VisionStatement extends Component {
             <Container>
                 <h1>Building the Future of Finance</h1>
                 <p style={{fontSize: "20px", marginTop: "0px"}}>
-                    Aegis Custody caters to institutions, exchanges, hedge
-                    funds, investment firms and digital asset businesses
+                    Aegis Custody caters to institutions, exchanges, hedge funds, investment firms and digital asset businesses
                 </p>
             </Container>
         );

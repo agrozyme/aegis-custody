@@ -99,7 +99,7 @@ class OpenPositions extends Component {
         return (
             <Container id="openPositions">
                 <h1 style={{fontFamily: "franklin", marginBottom: "10px" }}>Open Positions</h1>
-                <p style={{marginBottom: "50px"}}>We are growing and looking for the most driven, smart, and creative to help achieve our mission. If you are a person that loves the pace and hustle of a growth phase company and and loves developing solutions to industry problems, talk to us. Also, check out our open positions. </p>
+                <p style={{marginBottom: "50px"}}>We are growing and looking for the most driven, smart, and creative individuals to help achieve our mission. If you are a person that loves the pace and hustle of a growth phase company and passionate about developing solutions to industry problems, talk to us!</p>
 
                 {this.state.doc &&
                     this.state.doc.map((job, i) => (

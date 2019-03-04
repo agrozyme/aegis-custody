@@ -76,11 +76,10 @@ class Landing extends Component {
                         <div style={{minHeight: "120px"}}></div>
                         <div style={{textAlign: "center", maxWidth: "800px" }}>
                             <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "white"}}>Our Vision is to Build<br></br>the Future of Value</h2>
-                            <a style={{textDecoration: "none"}}href="#ourTeam" data-uk-scroll="true"><p style={{color: "#FF6A5F",}}>Our Team</p></a>
+                            <p>We are on a mission to create the critical infrastructure for the rapidly growing digital assets markets by building custody technology, products and solutions</p>
                         </div>
                     </ContentContainer>
                 </Container>
-                <div style={AboutSection2} />
             </div>
         );
     }

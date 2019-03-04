@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+// import { connect } from "http2";
 
 const Container = styled.div`
     padding: 70px 30px;
@@ -16,7 +17,7 @@ const Container = styled.div`
     }
 `;
 
-const Content = styled.div`
+const KeyItems = styled.div`
     background: #fff;
     width: 70%;
     margin: 0px auto;
@@ -56,35 +57,41 @@ const MultilayerImages = {
     height: "75px"
 }
 
+const Content = {
+    p1: "Our Multisignature (“Multisig”) provides security against attacks and tolerance for losing access to a key(s)",
+    p2: "Account level protections can be set up with pre-approved whitelisting, withdrawal thresholds adding an extra layer of protection",
+    p3: "Simple and streamlined customer onboarding process from account setup to activation with designated account management"
+}
+
+
 class MultilayerInfo extends Component {
     render() {
         return (
             <Container>
                 <h1>Multilayer Security</h1>
                 <div style={Diagram}></div>
-                <Content>
+                <KeyItems>
                     <Row data-uk-scrollspy="target: > .multilayerInfoBox; cls:uk-animation-fade; delay: 200">
                         <div className="multilayerInfoBox">
                         <img src="./images/icons-21.png" alt="" style={MultilayerImages}/>
                             <p>
-                            Our Multisignature (“Multisig”) provides security against attacks and tolerance for losing access to a key
+                            {Content.p1}
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
                         <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
                             <p>
-                            Account level protections can be set up with withdrawal thresholds, pre-approved whitelisting of specific addresses adding extra layer of protection
-
+                                {Content.p2}
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
                         <img src="./images/icons-16.png" alt="" style={MultilayerImages}/>
                             <p>
-                            Simple and streamlined customer onboarding process from account setup to activation with customer support
+                            {Content.p3}
                             </p>
                         </div>
                     </Row>
-                </Content>
+                </KeyItems>
             </Container>
         );
     }

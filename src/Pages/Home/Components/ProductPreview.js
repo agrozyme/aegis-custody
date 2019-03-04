@@ -2,20 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
-    // width: 100vw;
-    // height: 100vh;
-    // position: relative;
-    // background: linear-gradient(
-    //     135deg,
-    //     rgba(255, 106, 95, 1) 0%,
-    //     rgba(157, 209, 241, 1) 100%
-    // );
-    // padding: 30px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // box-sizing: border-box;
-    // text-align: center;
 `;
 
 const Desktop = styled.div`
@@ -57,64 +43,6 @@ const Header = styled.div`
     }
 `;
 
-const Container = styled.div`
-    width: 70%;
-    height: 100%;
-    margin: 0px auto;
-    display: flex;
-`;
-
-const Col = styled.div`
-    width: ${props => props.width || "50%"};
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-
-    h2 {
-        font-size: 2.2em;
-        margin: 0px;
-        color: #fff;
-    }
-`;
-
-const KeyImg = styled.img`
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    margin-left: -30px;
-`;
-
-const KeyFacts = styled.div`
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-
-    img {
-        height: 75px;
-        margin: 0 10px;
-        @media (max-width: 1000px) {
-            margin-right: 0px;
-        }
-        ${props => props.coin && "height: 65px;"}
-    }
-
-    p {
-        ${props =>
-        props.support &&
-        `
-            font-family: gotham_book_italic;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            margin-top: 20px;
-            color: #fff;
-        `}
-        font-family: ingra, sans-serif;
-    }
-`;
-
 const ProductImage = styled.div`
 
     img { max-height: 300px; }
@@ -126,14 +54,10 @@ const ProductImage = styled.div`
     }
 `
 
-const Title = styled.h2`
-    color: #fff;
-    margin: 0px 0px 50px 0px;
-`;
+const Content = {
+    paragraph1: "Our proprietary hardware with integrated operational workflows, security controls, and multi-signature accounts provides Exchanges, Funds, STOs and financial institutions a secure and simple custody "
 
-const Icons = styled.img`
-    width: 80px;
-`;
+}
 
 class ProductPreview extends Component {
     render() {
@@ -144,9 +68,7 @@ class ProductPreview extends Component {
                     <Header>
                         <h2 style={{ fontSize: "36px" }}>Aegis Custody Solution</h2>
                         <p>
-                            Proprietary cold storage with integrated operational
-                            workflows, security controls, and multi-signiture
-                            accounts.
+                        {Content.paragraph1}
                         </p>
                     </Header>
 

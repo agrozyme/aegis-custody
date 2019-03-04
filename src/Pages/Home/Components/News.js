@@ -1,15 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const NewsBox = {
-    // backgroundColor: "pink",
-    margin: "15px",
-    padding: "25px",
-    backgroundColor: "white",
-    minWidth: "25%",
-    boxShadow: "0px 2px 5px rgba(0,0,0,.2)"
-}
-
 const Stories = [
     {
         headline: "Aegis Crypto Custodian Launches And Already Gained Fosun As Lead Investor and Foxconn Client Deal",

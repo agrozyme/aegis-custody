@@ -4,97 +4,53 @@ import styled from "styled-components";
 const Container = styled.div`
     background: #344854;
     color: #fff;
-    padding: 40px 60px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    p {
-        margin: 0px;
-        padding: 0px 20px;
-    }
-
-    @media (max-width: 600px) {
-        padding: 40px 30px;
-        display:none;
-    }
-`;
-
-const Col = styled.div`
-    width: ${props => props.width || "50%"};
-
-    @media (max-width: 1000px) {
-        width: 100%;
-        margin: 20px auto;
-    }
-`;
-
-const Coins = styled.div`
+    padding: 60px 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
-    min-width: 400px;
-
-    img {
-        height: 75px;
-        margin: 0 10px;
-        @media (max-width: 1000px) {
-            margin-right: 0px;
-        }
-        ${props => props.coin && "height: 65px;"}
-    }
-
-    p {
-        ${props =>
-            props.support &&
-            `
-            font-family: gotham_book_italic;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            margin-top: 20px;
-            color: #fff;
-        `}
-        font-family: ingra, sans-serif;
-    }
+    flex-wrap: wrap;
 `;
 
-const largeCopy = {
-    fontSize: "25px",
-    lineHeight: "35px",
-    marginLeft: "20px",
-    minWidth: "800px"
-};
+const ContentBox = styled.div`
+    max-width: 1000px;
 
-const centered = {
-    display: "flex",
-    flexDirection: "column"
-};
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+
+`
+
+const Coins = styled.div`
+    @media (max-width: 1000px) {
+        margin-bottom: 60px
+    }
+`
+
+const Content = {
+    p1: "Our inherent technology is designed with a core philosophy of ‘security first’ controls to prevent against external threats, distributed key management system to safeguard from concentrated access and attacks and institutional grade policies & procedures to protect against human error"
+}
 
 class MainFeatures extends Component {
     render() {
         return (
             <Container>
-                <div style={{maxWidth: "1150px", display: "flex", alignItems: "center", margin: "0 auto"}}>
-                <Col width="100%" style={centered}>
-                    <Coins support={true}>
-                        <p>We Currently Support</p>
+
+                <ContentBox style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <Coins style={{minWidth: "260px", display: "flex", alignItems: "center", flexDirection: "column"}}>
+                        <div style={{textAlign: "center"}}><p style={{fontSize: "25px", margin: "0"}}>We Currently Support</p></div>
+                        <div style={{display: "flex", justifyContent: "space-between", margin: "25px 0"}}>
+                            <img style={{maxHeight: "60px"}} src="./images/coin-1.png" alt="" />
+                            <img style={{maxHeight: "60px"}} src="./images/coin-2.png" alt="" />
+                            <img style={{maxHeight: "60px"}} src="./images/coin-3.png" alt="" />
+                        </div>
+                        <div style={{textAlign: "center"}}><p style={{fontSize: "25px", margin: "0"}}>and more coming soon</p></div>
                     </Coins>
-                    <Coins coin={true} style={{marginBottom: "0"}}>
-                        <img src="./images/coin-1.png" alt="" />
-                        <img src="./images/coin-2.png" alt="" />
-                        <img src="./images/coin-3.png" alt="" />
-                    </Coins>
-                    <Coins support={true}>
-                        <p>and more coming soon</p>
-                    </Coins>
-                </Col>
-                <Col width="100%">
-                    <p style={largeCopy}>
-                    Our inherent technology is designed with security controls to prevent against external threats, distributed key management system to safeguard from concentrated access, and institutional grade policies &amp; procedures to protect against human error 
-                    </p>
-                </Col>
-                </div>
+                    <div style={{minWidth: "", marginLeft: "50px"}}>
+                        <p style={{fontSize: "25px", margin: "0"}}>{Content.p1}</p>
+                    </div>
+                </ContentBox>
+
+
             </Container>
         );
     }

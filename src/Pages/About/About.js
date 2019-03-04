@@ -13,9 +13,9 @@ class About extends Component {
             <div>
                 <Landing />
                 <MissionVision />
-                <OurTeam />
+                {/* <OurTeam /> */}
                 <OurSponsors />
-                {/* <LearnMore /> */}
+                <LearnMore />
                 <Footer />
             </div>
         );

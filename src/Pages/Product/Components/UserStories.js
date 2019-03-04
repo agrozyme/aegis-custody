@@ -1,18 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
-
-`;
-
-const LineLayer = styled.div`
-
-`;
-
-const MountainLayer = styled.div`
-   
-`;
-
 const ContentLayer = styled.div`
     display: flex;
     width: 100%;
@@ -52,7 +40,10 @@ class UserStories extends Component {
             <div style={{ backgroundColor: "#4D6A7C", padding: "70px 10px" }}>
                 <h1 style={{ textAlign: "center", color: "white" }}>User Stories</h1>
                 <ContentLayer  data-uk-scrollspy="target: > .userStoryBox; cls:uk-animation-fade; delay: 200">
-                    <div className="userStoryBox">
+
+
+
+                    {/* <div className="userStoryBox">
                         <img className="userImage"
                             src="https://via.placeholder.com/50"
                             alt="" style={{ minHeight: "100px", height: "100px", minWidth: "100px", margin: "10px" }}
@@ -83,7 +74,7 @@ class UserStories extends Component {
                             nibh, ut fermentum massa justo sit amet
                             risus.
                         </p>
-                    </div>
+                    </div> */}
                 </ContentLayer>
             </div>
 
