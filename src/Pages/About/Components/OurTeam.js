@@ -101,18 +101,6 @@ class OurTeam extends Component {
         });
     };
 
-
-
-    // {this.state.doc &&
-    //     this.state.doc.map((employee, i) => (
-    //         <Card key={i}>
-    //             {console.log(employee)}
-    //             {/* <Profile url={employee.data.profile.url} /> */}
-    //             <h3 style={{ marginBottom: "10px", textAlign: "center" }}>{employee.data.name[0].text}</h3>
-    //             <p style={{ margin: "0", textAlign: "center" }}>{employee.data.title[0].text}</p>
-    //         </Card>
-    //     ))}
-
     render() {
         return (
             <div id="ourTeam" style={{ maxWidth: "1000px", padding: "70px 0", margin: "0 auto" }}>

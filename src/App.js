@@ -30,6 +30,11 @@ class App extends Component {
                 <GetStartedFixed />
                 <div id="contact-form" data-uk-modal="true">
                     <div className="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
+                    <button
+                                        className="uk-modal-close-default"
+                                        type="button"
+                                        data-uk-close="true"
+                                    />
                         <h2 className="uk-modal-title">Contact Us</h2>
                         <form
                             action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
