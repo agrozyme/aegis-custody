@@ -12,11 +12,11 @@ const Container = styled.div`
     background-position: bottom;
     background-size: cover;
 
-    @media (max-width: 1000px) {
-        background: url(./images/bridge2mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    // @media (max-width: 1000px) {
+    //     background: url(./images/bridge2mobile.jpg);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
 
 `;
 
