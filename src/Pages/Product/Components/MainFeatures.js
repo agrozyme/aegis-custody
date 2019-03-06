@@ -31,7 +31,6 @@ const Content = {
 }
 
 const Body = styled.div`
-margin-left: 50px
     @media (max-width: 1000px) {
         margin-left: 0;
     }

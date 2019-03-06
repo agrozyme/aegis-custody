@@ -56,8 +56,8 @@ class OurSponsors extends Component {
                     <EndorsementsInner>
                         <h2>Investors</h2>
                         <div data-uk-scrollspy="target: > img; cls:uk-animation-fade; delay: 200">
-                            <img style={{margin: "30px"}} src="./images/logos1.png" alt="" />
-                            <img style={{margin: "30px"}} src="./images/logos2.png" alt="" />
+                            <img style={{margin: "10px 30px"}} src="./images/logos1.png" alt="" />
+                            <img style={{margin: "10px 30px"}} src="./images/logos2.png" alt="" />
                         </div>
                     </EndorsementsInner>
                 </Section>

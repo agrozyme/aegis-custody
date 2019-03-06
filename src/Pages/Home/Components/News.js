@@ -101,7 +101,7 @@ class News extends Component {
                 <h2 style={{textAlign: "center"}}>In the Media</h2>
                 <div style={{overflow: "hidden", maxWidth: "80%", margin: "0 auto", display: "flex", alignItems: "center", position: "relative"}}>
                 <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
-                <NewsCont style={{ display: "flex", overflow: "scroll" }}>
+                <NewsCont style={{ display: "flex", overflow: "scroll", minHeight: "320px" }}>
                     {Stories.map((red, i) => (
                             <NewsStory key={i} id={"newsstory"+i}>
                                 <h3>{red.headline}</h3>

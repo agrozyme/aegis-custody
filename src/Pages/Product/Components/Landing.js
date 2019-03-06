@@ -19,7 +19,6 @@ const ContentContainer = styled.div`
     background-repeat: no-repeat
 
     @media (max-width: 1000px) {
-        background-size: contain;
         min-height: 600px
     }
 

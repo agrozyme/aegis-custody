@@ -31,7 +31,7 @@ const Container = styled.div`
         }
     }
 
-    border-bottom: 2px solid #c4c4c4;
+    border-bottom: 2px solid #CFCFCF;
 `;
 
 const ContentRow = {

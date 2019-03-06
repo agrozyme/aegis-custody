@@ -9,7 +9,7 @@ const Container = styled.div`
     flex-direction: column;
     background-image: url(./images/bg-line.png);
     background-repeat: no-repeat;
-    background-position: 0px 250px;
+    background-position: 0px 310px;
     background-size: 100% 2px;
 
     @media (max-width: 800px) {
