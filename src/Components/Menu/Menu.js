@@ -13,7 +13,7 @@ const Container = styled.div`
     align-items: center;
     padding: 60px 60px 0px 60px;
     box-sizing: border-box;
-    color: #fff;
+    color: #353535;
     z-index: 100;
 
     @media (max-width: 600px) {
@@ -50,7 +50,7 @@ const NavItem = styled.div`
         font-family: "franklin_bold";
         font-weight: bold;
         text-decoration: none;
-        color: #fff;
+        color: #353535;
         ${props => props.dark && "color: #353535;"}
     }
 
