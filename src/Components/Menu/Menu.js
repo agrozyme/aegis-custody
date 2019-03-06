@@ -107,8 +107,7 @@ const MobileMenuBtn = styled.div`
     border: 0px solid #000;
 
     span svg {
-        color: #fff;
-        ${props => props.dark && "color: #353535;"}
+        color: #353535
     }
 
     @media (max-width: 1024px) {

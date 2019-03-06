@@ -55,13 +55,6 @@ const ContentContainer = styled.div`
     }
 `;
 
-const AboutSection2 = {
-    display: "flex",
-    padding: "50px",
-    margin: "0 auto",
-    maxWidth: "800px"
-};
-
 class Landing extends Component {
     render() {
         return (
