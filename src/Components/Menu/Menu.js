@@ -103,12 +103,12 @@ const mobileNavItem = {
 const MobileMenuBtn = styled.div`
     display: none;
     margin-left: 20px;
-    background: none;
+    // background: url(./images/menu.png);
     border: 0px solid #000;
 
-    span svg {
-        color: #353535
-    }
+    // span svg {
+    //     color: #353535
+    // }
 
     @media (max-width: 1024px) {
         display: block;
@@ -187,11 +187,7 @@ class Menu extends Component {
                 </div>
 
                 <Link to="/">
-                    {this.props.dark ? (
                         <Logo src="./images/logo-dark.svg" alt="logo" />
-                    ) : (
-                        <Logo src="./images/logo.svg" alt="logo" />
-                    )}
                 </Link>
 
                 <MobileMenuBtn
