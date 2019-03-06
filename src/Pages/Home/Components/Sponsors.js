@@ -46,10 +46,10 @@ class Sponsors extends Component {
         return (
             <Section>
                 <EndorsementsInner>
-                    <h2>Trusted and backed by</h2>
+                    <h2>Trusted by Market Leaders</h2>
                     <div data-uk-scrollspy="target: > img; cls:uk-animation-fade; delay: 200">
-                        <img style={{margin: "30px"}} src="./images/logos1.png" alt="" />
-                        <img style={{margin: "30px"}} src="./images/logos2.png" alt="" />
+                        <img style={{margin: "10px 30px 10px 30px"}} src="./images/logos1.png" alt="" />
+                        <img style={{margin: "10px 30px 10px 30px"}} src="./images/logos2.png" alt="" />
                     </div>
                 </EndorsementsInner>
             </Section>

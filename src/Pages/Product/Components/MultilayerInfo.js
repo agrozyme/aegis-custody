@@ -50,9 +50,9 @@ const MultilayerImages = {
 }
 
 const Content = {
-    p1: "Our Multisignature (“Multisig”) provides security against attacks and tolerance for losing access to a key(s)",
-    p2: "Account level protections can be set up with pre-approved whitelisting, withdrawal thresholds adding an extra layer of protection",
-    p3: "Simple and streamlined customer onboarding process from account setup to activation with designated account management"
+    p1: "Set transfer policies and distributed key structure",
+    p2: "Create approval layers and identify key holders",
+    p3: "Transfer digital assets to whitelisted addresses"
 }
 
 const Diagram = styled.div`
@@ -60,10 +60,15 @@ const Diagram = styled.div`
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 600px;
+    min-height: 350px;
     z-index: 200;
     width: auto;
     margin: 20px;
+
+    @media (max-width: 1000px) {
+        min-height: 300px;
+    }
+
 `
 
 class MultilayerInfo extends Component {
@@ -76,7 +81,7 @@ class MultilayerInfo extends Component {
                 <KeyItems>
                     <Row data-uk-scrollspy="target: > .multilayerInfoBox; cls:uk-animation-fade; delay: 200">
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-25.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
                             <p>
                                 {Content.p1}
                             </p>
@@ -88,7 +93,7 @@ class MultilayerInfo extends Component {
                             </p>
                         </div>
                         <div className="multilayerInfoBox">
-                        <img src="./images/icons-20.png" alt="" style={MultilayerImages}/>
+                        <img src="./images/icons-25.png" alt="" style={MultilayerImages}/>
                             <p>
                                 {Content.p3}
                             </p>

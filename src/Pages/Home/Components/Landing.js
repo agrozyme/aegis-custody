@@ -54,7 +54,7 @@ const LeaderContent = styled.div`
 
 const TextCont = styled.div`
      margin-top: 35vh;
-
+        z-index: 3;
      @media (max-width: 1000px) {
          margin-top: 10px !important;
          margin-left: 0 !important;
@@ -65,7 +65,7 @@ const TextCont = styled.div`
 const LeaderTitle = styled.h1`
     font-size: 4em;
     color: #fff;
-    z-index: 3;
+    z-index: 1;
     margin: 0 0 0 60px;
     margin-left: 60px;
 
@@ -158,6 +158,14 @@ const MountainBG = styled.div`
 
 `;
 
+const LeaderLine = styled.div`
+    height: 2.5px;
+    width: 100vw;
+    background-color: #FF6A5F;
+    margin: 10px 0;
+
+`
+
 class Landing extends Component {
     render() {
         return (
@@ -165,13 +173,14 @@ class Landing extends Component {
                 <LeaderInner>
                     <Menu dark={true}/>
                     <LeaderContent>
+                    <MountainBG style={{zIndex: "10"}} />
                         <TextCont>
                             <LeaderTitle style={{color: "#353535", }}>
                                 Institutional
                                 <br />
                                 Digital Asset Custody
                             </LeaderTitle>
-                            {/* <LeaderLine /> */}
+                            <LeaderLine />
                             <LeaderSubtitle style={{color: "#353535",}}>
                                 Bringing you secure and simple storage
                             </LeaderSubtitle>
@@ -192,7 +201,7 @@ class Landing extends Component {
                             </a>
                         </CallToAction>
                     </LeaderContent>
-                    <MountainBG style={{zIndex: "0"}} />
+
                 </LeaderInner>
             </Container>
         );

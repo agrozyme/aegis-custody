@@ -55,7 +55,7 @@ const ProductImage = styled.div`
 `
 
 const Content = {
-    paragraph1: "Our proprietary hardware with integrated operational workflows, security controls, and multi-signature accounts provides Exchanges, Funds, STOs and financial institutions a secure and simple custody "
+    paragraph1: "Aegis Custody provides institutional grade security through an intuitive combination of cold storage hardware, multisig wallets, and policy based approvals."
 
 }
 

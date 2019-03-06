@@ -96,15 +96,11 @@ class Footer extends Component {
                     <Col>
                         <h5>About</h5>
                         <p>
-                            AegisCo is a Fintech digital assets management
-                            company based in San Francisco, CA. Founded in 2018,
-                            Aegis Custody is investor backed and provides
-                            Custody solution to institutions, exchanges, funds
-                            and STOs.
+                        Founded in 2018, Aegis Custody is a VC backed digital asset management company based in San Francisco. Aegis Custody offers products and services that allow financial institutions, exchanges, funds, and token issuers to protect their digital assets.
                         </p>
                     </Col>
                     <Col>
-                        <h5>AegisCo</h5>
+                        <h5>Aegis Custody</h5>
                         <p>Safe. Secure. Simple.</p>
                         <p>San Francisco, CA USA</p>
                         <p>Copyright &copy; 2019. </p>

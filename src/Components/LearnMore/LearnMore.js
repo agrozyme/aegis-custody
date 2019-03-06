@@ -55,8 +55,7 @@ class LearnMore extends Component {
         return (
             <Section>
                 <Container>
-                    <h2>Learn More</h2>
-                    <p style={{fontSize: "20px", marginTop: "5px"}}>We are onboarding exchanges, funds and institutions</p>
+                    <h2 style={{ marginBottom: "25px"}}>Bringing You Safe and Secure Custody</h2>
                     <GetStarted
                         className="hideGetStarted"
                         data-uk-toggle="target: #contact-form"

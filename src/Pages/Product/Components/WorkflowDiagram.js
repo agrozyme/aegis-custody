@@ -30,6 +30,8 @@ const Container = styled.div`
             font-size: 1.7em;
         }
     }
+
+    border-bottom: 2px solid #c4c4c4;
 `;
 
 const ContentRow = {
@@ -67,12 +69,11 @@ const WFBox = styled.div`
     }
 `
 
-
 class WorkflowDiagram extends Component {
     render() {
         return (
             <Container>
-                <h1>Transaction Flow</h1>
+                <h1>How It Works</h1>
                 <img src="./images/user-flow.png" alt="" />
                 <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
@@ -81,11 +82,12 @@ class WorkflowDiagram extends Component {
                     </div>
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-23.png" style={ContentImages}></img></div>
-                        <p>Operational work flows are designed to include controls for funds transfers with designated role access</p>
+                        <p>Customizable singing policies are used to control asset transfers based on transaction size and frequency</p>
                     </div>
                 </WFBox>
             </Container>
         );
     }
 }
+
 export default WorkflowDiagram;

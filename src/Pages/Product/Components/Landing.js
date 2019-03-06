@@ -13,7 +13,7 @@ const ContentContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     min-height: 650px;
-    background-image: url(./images/mountainstock2.png);
+    background-image: url(./images/mountainstock10.png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat
@@ -26,7 +26,7 @@ const ContentContainer = styled.div`
 `;
 
 const Copy = styled.div`
-    max-width: 600px;
+    max-width: 700px;
     padding-bottom: 100px;
     margin: 0px auto;
     text-align: center;
@@ -82,10 +82,10 @@ const ContentRow = styled.div`
 `
 
 const Content = {
-    p1: "Multi-layer security designed with proprietary cold storage, multi-signature accounts, and security and operational controls",
-    enhancedSecurity: "Keep your digital assets safe with our proprietary hardware cold storage for improved security and redundancy",
-    simple: "Manage and control access to account and transaction activity with our custody management software (web, desktop and mobile responsive applications)",
-    policy: "Business rules and operational workflows for a secure end-end custody management including access, approval, withdrawal, transaction management and more"
+    p1: "Aegis Custody gives you control of your private keys and your digital assets.",
+    enhancedSecurity: "Proprietary cold storage for improved security and redundancy",
+    simple: "Easy to use hardware devices and software solutions",
+    policy: "Customizable business logic for all types of institutions"
 }
 
 class Landing extends Component {
@@ -96,8 +96,8 @@ class Landing extends Component {
                 <ContentContainer>
                     <Copy>
                         <div style={{ minHeight: "80px" }}></div>
-                        <h1 style={{ width: "100%", fontSize: "55px" }}>Custody Solution</h1>
-                        <p>
+                        <h1 style={{ width: "100%", fontSize: "55px", marginBottom: "15px" }}>Institutional Self-Custody</h1>
+                        <p style={{margin: "0"}}>
                             {Content.p1}
                         </p>
                     </Copy>
