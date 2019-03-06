@@ -104,7 +104,7 @@ const MobileMenuBtn = styled.div`
     display: none;
     margin-left: 20px;
     background: none;
-    border: 0px solid #fff;
+    border: 0px solid #000;
 
     span svg {
         color: #fff;

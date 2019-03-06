@@ -29,8 +29,15 @@ const Copy = styled.div`
     padding-bottom: 100px;
     margin: 0px auto;
     text-align: center;
+    h2 {
+        font-size: 55px;
+    }
     @media (max-width: 800px) {
         max-width: 90%;
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 `;
 
@@ -95,7 +102,7 @@ class Landing extends Component {
                 <ContentContainer>
                     <Copy>
                         <div style={{ minHeight: "80px" }}></div>
-                        <h1 style={{ width: "100%", fontSize: "55px", marginBottom: "15px" }}>Institutional Self-Custody</h1>
+                        <h1 style={{ width: "100%", marginBottom: "15px" }}>Institutional Self-Custody</h1>
                         <p style={{margin: "0"}}>
                             {Content.p1}
                         </p>
