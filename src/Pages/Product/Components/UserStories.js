@@ -49,6 +49,7 @@ class UserStories extends Component {
                                 <div><img style={{ maxHeight: "70px", margin: "10px 20px" }} src="./images/coin-2.png" alt="" /><p style={{color: "white", textAlign: "center", width: "100%"}}>ETH</p></div>
                                 <div><img style={{ maxHeight: "70px", margin: "10px 20px" }} src="./images/coin-3.png" alt="" /><p style={{color: "white", textAlign: "center", width: "100%"}}>ERC-20</p></div>
                             </div>
+                            <p style={{color: "white", textAlign: "center", width: "100%"}}>Additional assets coming soon…</p>
                         </div>
 
                 </ContentLayer>

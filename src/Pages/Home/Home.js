@@ -5,7 +5,6 @@ import Landing from "./Components/Landing";
 import DesignPhilosophy from "./Components/DesignPhilosophy";
 import ProductPreview from "./Components/ProductPreview";
 import Sponsors from "./Components/Sponsors";
-import LearnMore from "../../Components/LearnMore";
 import Footer from "../../Components/Footer";
 import News from "./Components/News"
 
@@ -31,6 +30,65 @@ const GetStarted = styled.button`
     `
             : `
         padding: 10px 100px;
+    `}
+`;
+
+
+const LearnMore2 = styled.div`
+    width: 100vw;
+    text-align: center;
+`;
+
+const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    padding: 140px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(
+    //     165deg,
+    //     rgba(239, 250, 255, 0) 40%,
+    //     rgba(223, 241, 252, 0.7) 100%
+    // );
+
+    h2 {
+        margin: 0px;
+    }
+`;
+
+const GetStarted2 = styled.button`
+    background: #ff6a5f;
+    border-radius: 20px;
+    border: 0px solid #ff6a5f;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #fff
+    }
+
+    ${props =>
+        props.keyPage
+            ? `
+        align-self: flex-end;
+        margin-right: 10%;
+        margin-top: 70%;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+    `
+            : `
+        padding: 10px 20px;
     `}
 `;
 
@@ -109,9 +167,17 @@ class Home extends Component {
 
                 <Sponsors />
 
-                <LearnMore />
+                <LearnMore2>
+                <Container>
+                    <h2 style={{ marginBottom: "25px"}}>Bringing You Safe and Secure Custody</h2>
+                    <GetStarted2
+                    >
+                        <a href="/product" style={{padding: "0px 20px"}}>Learn More</a>
+                    </GetStarted2>
+                </Container>
+            </LearnMore2>
 
-                <Footer />
+            <Footer />
             </div>
         );
     }

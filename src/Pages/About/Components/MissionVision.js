@@ -8,7 +8,6 @@ const Container = styled.div`
     text-align: center;
     align-items: center;
     padding: 70px 20px;
-
     max-width: calc(100%-40px)
 
     @media (max-width: 1000px) {

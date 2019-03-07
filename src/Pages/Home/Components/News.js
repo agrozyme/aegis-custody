@@ -18,7 +18,7 @@ const Stories = [
         site: "The Block Crypto"
     },
     {
-        headline: "Hit AI & Blockchain Aegis Custody技術長傅冠彰：企業用戶支持，才是區塊鏈與加密貨幣產業的發展關鍵！",
+        headline: 'AEGIS CUSTODY awarded the Best Enterprise Wallet of the Year with "Aegis Wallet"',
         date: "Feb 21, 2019",
         link: "https://bitnance.vip/news/401b724e-8c4b-426d-a42a-9406a434f2b0",
         description: "「全球各地的中大型企業用戶支持，才是區塊鏈與加密貨幣產業的發展關鍵！」Aegis Custody技術長傅冠彰在第二屆《Hit AI & Blockchain》人工智慧暨區塊鏈產業高峰會上表示。",

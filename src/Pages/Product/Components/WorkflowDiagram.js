@@ -78,11 +78,11 @@ class WorkflowDiagram extends Component {
                 <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-21.png" style={ContentImages}></img></div>
-                        <p>All private keys are stored on the chip set and our distributed key management system eliminates single points of failure</p>
+                        <p>All private keys are stored on security chips and our distributed key management system eliminates single points of failure</p>
                     </div>
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-23.png" style={ContentImages}></img></div>
-                        <p>Customizable singing policies are used to control asset transfers based on transaction size and frequency</p>
+                        <p>Customizable signing policies are used to control asset transfers based on transaction size and frequency</p>
                     </div>
                 </WFBox>
             </Container>

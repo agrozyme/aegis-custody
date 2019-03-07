@@ -96,7 +96,7 @@ class Footer extends Component {
                     <Col>
                         <h5>About</h5>
                         <p>
-                        Founded in 2018, Aegis Custody is a VC backed digital asset management company based in San Francisco. Aegis Custody offers products and services that allow financial institutions, exchanges, funds, and token issuers to protect their digital assets.
+                        Founded in 2018, Aegis Custody is headquartered in San Francisco and is backed by a global asset management company. Aegis Custody offers products and services that allow financial institutions, exchanges, funds, and token issuers to transfer and store their digital assets. 
                         </p>
                     </Col>
                     <Col>

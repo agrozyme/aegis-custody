@@ -55,7 +55,7 @@ const ProductImage = styled.div`
 `
 
 const Content = {
-    paragraph1: "Aegis Custody provides institutional grade security through an intuitive combination of cold storage hardware, multisig wallets, and policy based approvals."
+    paragraph1: "Aegis Custody provides institutional-grade security through an intuitive combination of cold storage hardware, multisig wallets, and policy-based approvals."
 
 }
 
