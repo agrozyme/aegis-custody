@@ -81,7 +81,7 @@ class Footer extends Component {
                             Custody Solution
                         </Link>
                         <br />
-                        <Link to="/about" style={LinkStyle}>
+                        {/* <Link to="/about" style={LinkStyle}>
                             About
                         </Link>
                         <br />
@@ -91,7 +91,7 @@ class Footer extends Component {
                         <br />
                         <Link to="/careers" style={LinkStyle}>
                             Careers
-                        </Link>
+                        </Link> */}
                     </Col>
                     <Col>
                         <h5>About</h5>
