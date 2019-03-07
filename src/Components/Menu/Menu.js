@@ -152,7 +152,7 @@ class Menu extends Component {
                                     to="/product"
                                     data-uk-toggle="target: #slideNav"
                                 >
-                                    Custody Solution
+                                    Self-Custody Solution
                                 </Link>
                             </li>
                             {/* <li className="mobileNavItem">
@@ -191,7 +191,7 @@ class Menu extends Component {
 
                 <ItemContainer>
                     <NavItem dark={this.state.dark} style={{padding: "0"}}>
-                        <Link className="navItem" to="/product">Custody Solution</Link>
+                        <Link className="navItem" to="/product">Self-Custody Solution</Link>
                     </NavItem>
                     {/* <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/about">About</Link>
