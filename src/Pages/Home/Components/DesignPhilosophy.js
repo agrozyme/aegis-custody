@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Content = {
     paragraph1: "Safeguarding digital assets is risky because of the complexity of cryptographic systems.",
-    paragraph2: "Institutions that use digital assets have had to rely on treasury management tools that were difficult to operate and compromised on security."
+    paragraph2: "Until now, institutions that use digital assets have had to rely on custody tools that were difficult to operate and compromised on security."
 }
 
 class DesignPhilosophy extends Component {
