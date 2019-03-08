@@ -58,7 +58,7 @@ class CareersCopy extends Component {
                         <div className="careerImage" style={Image} style={{height: "350px", width: "500px", margin: "20px", backgroundImage: "url(./images/careers1.jpeg)", backgroundSize: "cover", backgroundPosition:"center"}}></div>
                         <div style={Copy}>
                             <h3 style={{ margin: "0 0 15px 0" }}>Working at Aegis Custody</h3>
-                            <p style={{ margin: "0" }}>We are a team of highly committed and passionate individuals bringing tremendous depth of experience, skills, and talents to develop the best infrastructure for the rapidly growing global digital assets market. We have taken up an important challenge and motivated to play a vital role in shaping the ecosystem. </p>
+                            <p style={{ margin: "0" }}>We are a diverse team of highly-skilled individuals who are committed to building amazing products and services. We take our work seriously, but at the same time we enjoy what we do.</p>
                         </div>
                     </RowSection>
                 </div>
@@ -66,7 +66,8 @@ class CareersCopy extends Component {
                     <RowSection style={Row}>
                         <div style={Copy}>
                             <h3 style={{ margin: "0 0 15px 0" }}>Our Values</h3>
-                            <p style={{ margin: "0" }}>We are building our culture carefully and deliberately. Our values are constantly in development to reflect our Aegis family’s values. However, the fundamentals don’t change - we aim to uphold to higher standards of excellence in every dimension - global mindset, respect for all, curious, fast-moving, learning, fun, committed. </p>
+                            <p style={{ margin: "0" }}>We do what is best for our clients. We do what we say we are going to do, when we say we are going to do it. We engage in direct and candid conversations. We operate as a meritocracy. 
+</p>
                         </div>
                         <div className="careerImage" style={{height: "350px", width: "500px", margin: "20px", backgroundImage: "url(./images/globe.jpeg)", backgroundSize: "cover", backgroundPosition:"center"}}></div>
                     </RowSection>
