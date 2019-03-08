@@ -81,11 +81,11 @@ class Footer extends Component {
                             Custody Solution
                         </Link>
                         <br />
-                        {/* <Link to="/about" style={LinkStyle}>
+                        <Link to="/about" style={LinkStyle}>
                             About
                         </Link>
                         <br />
-                        <Link to="/about" style={LinkStyle}>
+                        {/* <Link to="/about" style={LinkStyle}>
                             News
                         </Link>
                         <br />

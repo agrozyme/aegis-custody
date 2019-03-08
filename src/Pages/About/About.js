@@ -6,6 +6,7 @@ import OurTeam from "./Components/OurTeam";
 import LearnMore from "../../Components/LearnMore";
 import Footer from "../../Components/Footer";
 import OurSponsors from "./Components/OurSponsors"
+import Careers from "./Components/Careers"
 
 class About extends Component {
     render() {
@@ -16,7 +17,9 @@ class About extends Component {
                 {/* <OurTeam /> */}
                 <OurSponsors />
                 <LearnMore />
+                <Careers />
                 <Footer />
+
             </div>
         );
     }

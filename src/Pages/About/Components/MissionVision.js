@@ -16,8 +16,8 @@ const Container = styled.div`
 `;
 
 const Content = {
-    p1: "Aegis Custody is a FinTech digital assets custodian and management company built for institutional customers including for exchanges, funds, STOs and financial services institutions. Founded in 2018, we are an investor backed company based in San Francisco, CA with offices in South Dakota and in Taiwan. Aegis Custody is in the process of becoming a licensed qualified custodian and launched its self custody solution in Asia and the US ",
-    p2: "We exercise ‘security first’ philosophy in everything we do - from product, technology, operations and customer integration to provide the most secure and simple digital asset custodian services for institutions and help unlock institutional capital into the digital assets space",
+    p1: "Founded in 2018, Aegis Custody is a San Francisco fintech company that provides financial institutions with a secure and easy-to-use solution for custody of digital assets. We are backed by Fosun, a global asset management company.",
+    p2: "Our mantra is ‘security first’ because we take security very seriously. This ideology carries through everything we do from hardware design, to software deployment, and internal operations. Digital assets need to be effectively secured and easy-to-use. We distribute trust across an organization and implement transfer policies that require multiple approvals to move assets. Each step in the process is easy-to-do, but when combined together creates a powerful defense.",
 
 }
 
@@ -26,7 +26,7 @@ class MissionVision extends Component {
         return (
             <div>
                 <Container>
-                    <img src="./images/icons-28.png" style={{height: "70px", width: "70px", marginBottom: "20px"}}></img>
+                    <img src="./images/stamp-01.png" style={{height: "70px", width: "70px", marginBottom: "20px"}}></img>
                     <p style={{ maxWidth: "700px", margin: "0 auto" }}>
                         {Content.p1}
                     </p>

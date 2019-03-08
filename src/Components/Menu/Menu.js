@@ -155,7 +155,7 @@ class Menu extends Component {
                                     Self-Custody Solution
                                 </Link>
                             </li>
-                            {/* <li className="mobileNavItem">
+                            <li className="mobileNavItem">
                                 <Link
                                     style={mobileNavItem}
                                     to="/about"
@@ -164,7 +164,7 @@ class Menu extends Component {
                                     About
                                 </Link>
                             </li>
-                            <li className="mobileNavItem">
+                            {/* <li className="mobileNavItem">
                                 <Link
                                     style={mobileNavItem}
                                     to="/careers"
@@ -193,9 +193,9 @@ class Menu extends Component {
                     <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/product">Self-Custody Solution</Link>
                     </NavItem>
-                    {/* <NavItem dark={this.state.dark} style={{padding: "0"}}>
+                    <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/about">About</Link>
-                    </NavItem> */}
+                    </NavItem>
                     {/* <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/about">News</Link>
                     </NavItem> */}
