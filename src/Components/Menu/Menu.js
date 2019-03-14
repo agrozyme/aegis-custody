@@ -164,7 +164,7 @@ class Menu extends Component {
                                     About
                                 </Link>
                             </li>
-                            {/* <li className="mobileNavItem">
+                            <li className="mobileNavItem">
                                 <Link
                                     style={mobileNavItem}
                                     to="/careers"
@@ -172,7 +172,7 @@ class Menu extends Component {
                                 >
                                     Careers
                                 </Link>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
                 </div>

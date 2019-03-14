@@ -85,13 +85,13 @@ class Footer extends Component {
                             About
                         </Link>
                         <br />
-                        {/* <Link to="/about" style={LinkStyle}>
+                        <Link to="/about" style={LinkStyle}>
                             News
                         </Link>
                         <br />
                         <Link to="/careers" style={LinkStyle}>
                             Careers
-                        </Link> */}
+                        </Link>
                     </Col>
                     <Col>
                         <h5>About</h5>

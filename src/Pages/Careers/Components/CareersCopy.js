@@ -66,8 +66,7 @@ class CareersCopy extends Component {
                     <RowSection style={Row}>
                         <div style={Copy}>
                             <h3 style={{ margin: "0 0 15px 0" }}>Our Values</h3>
-                            <p style={{ margin: "0" }}>We do what is best for our clients. We do what we say we are going to do, when we say we are going to do it. We engage in direct and candid conversations. We operate as a meritocracy. 
-</p>
+                            <p style={{ margin: "0" }}>We do what is best for our clients. We do what we say we are going to do, when we say we are going to do it. We engage in direct and candid conversations. We operate as a meritocracy.</p>
                         </div>
                         <div className="careerImage" style={{height: "350px", width: "500px", margin: "20px", backgroundImage: "url(./images/globe.jpeg)", backgroundSize: "cover", backgroundPosition:"center"}}></div>
                     </RowSection>

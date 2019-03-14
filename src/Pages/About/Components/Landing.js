@@ -65,8 +65,7 @@ class Landing extends Component {
                         <div style={{minHeight: "120px"}}></div>
                         <div style={{textAlign: "center", maxWidth: "800px" }}>
                             <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "#353535"}}>Our Mission</h2>
-                            <p style={{color: "#353535"}}>Aegis Custody is building easy-to-use products and services that empower institutions to securely use blockchain technologies and digital assets. 
-</p>
+                            <p style={{color: "#353535"}}>Aegis Custody is building easy-to-use products and services that empower institutions to securely use blockchain technologies and digital assets. </p>
                         </div>
                     </ContentContainer>
                 </Container>
