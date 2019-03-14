@@ -199,9 +199,9 @@ class Menu extends Component {
                     {/* <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/about">News</Link>
                     </NavItem> */}
-                    {/* <NavItem dark={this.state.dark} style={{padding: "0"}}>
+                    <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/careers">Careers</Link>
-                    </NavItem> */}
+                    </NavItem>
                     <NavItem primary={true} style={GetStarted}>
                         <a
                             href="#contact-form"
