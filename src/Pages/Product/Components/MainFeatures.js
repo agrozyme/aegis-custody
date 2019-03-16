@@ -37,12 +37,21 @@ const Body = styled.div`
 `
 
 const ProtectionImage = styled.div`
-    display: flex;
-    justify-content: center;
-    img {
-        max-height: 250px;
+    background-image: url(./images/diagram3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    z-index: 200;
+    width: auto;
+    margin: 20px;
+
+    @media (max-width: 1000px) {
+        min-height: 300px;
     }
+
 `
+
 
 class MainFeatures extends Component {
     render() {
@@ -59,11 +68,10 @@ class MainFeatures extends Component {
                         </div>
                         <div style={{textAlign: "center"}}><p style={{fontSize: "25px", margin: "0"}}>and more coming soon</p></div>
                     </Coins> */}
-                    <Body style={{minWidth: ""}}>
+                    <Body style={{minWidth: "100%"}}>
                         <h2 style={{color: "white", textAlign:"center", fontSize: "42px"}}>Protection Against</h2>
-                        <ProtectionImage>
-                            <img src="./images/diagram3.png"></img>
-                        </ProtectionImage>
+
+                        <img style={{maxHeight: "200px"}} src="./images/diagram3.png"></img>
                     </Body>
                 </ContentBox>
 
