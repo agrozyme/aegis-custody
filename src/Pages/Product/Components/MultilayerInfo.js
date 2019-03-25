@@ -61,12 +61,13 @@ const Diagram = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     min-height: 350px;
-    z-index: 200;
+    z-index: 1;
     width: auto;
     margin: 20px;
 
     @media (max-width: 1000px) {
-        min-height: 300px;
+        min-height: 500px;
+        background-image: url(./images/diagramvertical.png);
     }
 
 `

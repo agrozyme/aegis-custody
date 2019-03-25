@@ -31,8 +31,35 @@ const Content = {
 }
 
 const Body = styled.div`
+
+    .image2 {
+        display: none;
+    }
+     style-={{textAlign: "center"}}
+    h3 {
+        display: none;
+        color: white;
+        text-align: center;
+        margin: 10px auto;
+    }
+
     @media (max-width: 1000px) {
         margin-left: 0;
+
+        .image1 {
+            display:none;
+        }
+
+        .image2 {
+            display: flex;
+        }
+
+        h3 {
+            display: flex;
+
+        }
+    
+
     }
 `
 
@@ -51,6 +78,13 @@ const ProtectionImage = styled.div`
     }
 
 `
+
+const ContentImages = {
+    height: "130px",
+    width: "130px",
+    margin: "0 auto",
+
+}
 
 
 class MainFeatures extends Component {
@@ -71,7 +105,16 @@ class MainFeatures extends Component {
                     <Body style={{minWidth: "100%"}}>
                         <h2 style={{color: "white", textAlign:"center", fontSize: "42px"}}>Protection Against</h2>
 
-                        <img style={{maxHeight: "200px"}} src="./images/diagram3.png"></img>
+                        <img className="image1" style={{maxHeight: "200px"}} src="./images/diagram3.png"></img>
+
+                       <img className="image2" src="./images/icons-49.png" style={ContentImages}></img>
+                        <div style={{display: "flex", flexDirection:"column", justifyContent:"center"}}>
+                        <h3 style-={{textAlign: "center"}}>INTERNAL THREATS</h3>
+                       <h3 style-={{textAlign: "center"}}>EXTERNAL ADVERSARIES</h3>
+                       <h3 style-={{textAlign: "center"}}>HUMAN ERROR</h3>
+                        </div>
+
+
                     </Body>
                 </ContentBox>
 

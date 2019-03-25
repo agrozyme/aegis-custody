@@ -12,10 +12,10 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
     img {
-        width: 100%;
-        height: auto;
+
     }
 
     @media (max-width: 1000px) {
@@ -33,6 +33,25 @@ const Container = styled.div`
 
     border-bottom: 2px solid #CFCFCF;
 `;
+
+const Diagram = styled.div`
+
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background-image: url(./images/user-flow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 1000px) {
+        background-image: url(./images/flowvertical.png);
+        min-height: 700px;
+        margin: 0 auto;
+    }
+    
+
+`
 
 const ContentRow = {
     width: "100%",
@@ -74,7 +93,7 @@ class WorkflowDiagram extends Component {
         return (
             <Container>
                 <h1>How It Works</h1>
-                <img src="./images/user-flow.png" alt="" />
+                <Diagram></Diagram>
                 <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
                         <div style={ContentImageWrap}><img src="./images/icons-21.png" style={ContentImages}></img></div>
