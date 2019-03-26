@@ -19,8 +19,9 @@ const submitBtn = {
     padding: "10px 20px",
     color: "#fff",
     textTransform: "uppercase",
-    fontSize: "1em",
-    cursor: "pointer"
+    fontSize: "16px",
+    cursor: "pointer",
+    padding: "10px 37px"
 };
 
 const ContactForm = styled.div`
