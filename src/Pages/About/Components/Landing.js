@@ -44,7 +44,7 @@ const ContentContainer = styled.div`
 
 
         h2 {
-            font-size: 30px !important;
+            font-size: 36px !important;
             line-height: 40px !important;
         }
 

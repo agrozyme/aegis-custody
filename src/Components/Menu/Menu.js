@@ -29,7 +29,7 @@ const ItemContainer = styled.div`
     max-width: 50%;
     display: flex;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 `;
@@ -120,7 +120,7 @@ const MobileMenuBtn = styled.div`
     //     color: #353535
     // }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         display: block;
     }
 `;

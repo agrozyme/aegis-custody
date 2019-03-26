@@ -21,10 +21,10 @@ class Careers extends Component {
     render() {
         return (
 
-            <Section>
+            <Section className="hideGetStarted">
                 <h2>We Are Hiring</h2>
                 <p>Check out our job opportunities</p>
-                <a href="/careers">OPEN POSITIONS</a>
+                <a className="hideGetStarted" href="/careers">OPEN POSITIONS</a>
             </Section>
 
         )

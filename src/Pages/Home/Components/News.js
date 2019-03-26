@@ -82,7 +82,7 @@ min-height: 400px;
 
 const ScrollTab = styled.div`
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -100,15 +100,20 @@ const ScrollTab = styled.div`
 const NewsSection = styled.div`
     padding: 70px 40px;
     .newsBox {
-        max-width: 80%
+        max-width: 80%;
+        overflow: hidden;
     }
     @media (max-width: 1000px) {
         padding: 150px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        h2 {
+            margin-bottom: 40px;
+        }
         .newsBox{
             max-width: 100%;
+            overflow: visible;
         } 
     }
 `
@@ -118,7 +123,7 @@ class News extends Component {
         return (
             <NewsSection>
                 <h2 style={{textAlign: "center"}}>In the Media</h2>
-                <div className="newsBox" style={{overflow: "hidden", margin: "0 auto", display: "flex", alignItems: "center", position: "relative"}}>
+                <div className="newsBox" style={{margin: "0 auto", display: "flex", alignItems: "center", position: "relative"}}>
                 <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
                 
                 <NewsCont style={{ display: "flex", overflow: "scroll",  }}>
@@ -132,6 +137,7 @@ class News extends Component {
                 </NewsCont>
 
                 <a href="#newsstory5"><Arrow href="#newsstory1" style={{backgroundImage: "url(./images/arrowright.png)"}}></Arrow></a>
+                
                 <ScrollTab>Scroll right for more stories</ScrollTab>
                                     
                 </div>

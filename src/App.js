@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import styled from "styled-components"
 
 // import ScrollProgress from "./Components/ScrollProgress";
 import GetStartedFixed from "./Components/GetStartedFixed";
@@ -22,13 +23,19 @@ const submitBtn = {
     cursor: "pointer"
 };
 
+const ContactForm = styled.div`
+    input {
+        -webkit-appearance: none;
+    }
+`
+
 class App extends Component {
     render() {
         return (
             <div>
                 {/* <ScrollProgress /> */}
                 <GetStartedFixed />
-                <div id="contact-form" data-uk-modal="true">
+                <ContactForm id="contact-form" data-uk-modal="true">
 
                     <div className="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
                         <button
@@ -144,14 +151,14 @@ class App extends Component {
                                 size="20" 
                                 type="text" />
                                 <br></br>
-                            <input
+                            <input className="submitButton"
                                 style={submitBtn}
                                 type="submit"
                                 name="submit"
                             />
                         </form>
                     </div>
-                </div>
+                </ContactForm>
 
                 <Router>
                     <Switch>

@@ -100,7 +100,7 @@ class Footer extends Component {
                         <p>Safe. Secure. Simple.</p>
                         <p>San Francisco, CA USA</p>
                         <p>Copyright &copy; 2019. </p>
-                        <p>All Rights Reserved. 2.4</p>
+                        <p>All Rights Reserved. 2.5</p>
                     </Col>
                 </Row>
             </Container>

@@ -92,7 +92,7 @@ const LeaderTitle = styled.h1`
 `;
 
 const LeaderSubtitle = styled.h3`
-    font-size: 1.5em;
+    font-size: 20px;
     color: #fff;
     z-index: 2;
     margin: 0px;
@@ -102,7 +102,7 @@ const LeaderSubtitle = styled.h3`
     margin-left: 60px;
 
     @media (max-width: 1000px) {
-        font-size: 20px;
+        font-size: 17px;
         margin-left: 40px;
         margin-right: 20px;
     }
