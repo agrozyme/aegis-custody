@@ -90,7 +90,7 @@ const ScrollTab = styled.div`
 const NewsSection = styled.div`
     padding: 70px 40px;
     @media (max-width: 1000px) {
-        padding: 30px 0;
+        padding: 100px 0;
     }
 `
 

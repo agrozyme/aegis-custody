@@ -7,11 +7,7 @@ const Section = styled.div`
 const Desktop = styled.div`
     width: 100vw;
     position: relative;
-    background: linear-gradient(
-        135deg,
-        #73A5BD,
-        #6495B2
-    );
+    background: #699eba;
     padding: 70px 20px 100px 20px;
     display: flex;
     flex-direction: column;
@@ -24,6 +20,10 @@ const Desktop = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        .secondItem {
+            margin-top: 30px;
         }
     }
 `;
@@ -91,7 +91,7 @@ class ProductPreview extends Component {
                                 <img style={{ maxHeight: "65px", }} src="./images/icons-27.png"></img>
                                 <p style={{ margin: "0" }}>Multisig access and security</p>
                             </div>
-                            <div style={{ minWidth: "100%", }}>
+                            <div class="secondItem" style={{ minWidth: "100%", }}>
                                 <img style={{ maxHeight: "65px", }} src="./images/icons-30.png"></img>
                                 <p style={{ margin: "0" }}>Distributed and tiered key management system</p>
                             </div>

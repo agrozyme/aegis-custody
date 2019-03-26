@@ -62,15 +62,22 @@ const ContentBoxStyle = {
 
 const ContentBox = styled.div`
 
+    img {
+        max-height: 130px;
+    }
+
     @media(max-width: 1000px) {
         margin: 20px 0 !important;
         padding: 0 calc(100vw-25px);
+
+        img {
+            max-height: 75px;
+        }
     }
 
 `
 
 const LandingImages = {
-    maxHeight: "130px"
 }
 
 const LandingImageWrap = {

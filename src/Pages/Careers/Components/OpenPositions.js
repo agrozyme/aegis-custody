@@ -6,7 +6,17 @@ import { Link, RichText, Date } from "prismic-reactjs";
 const Container = styled.div`
     max-width: 800px;
     margin: 100px auto;
-    padding: 25px;
+    padding: 0px 40px 25px;
+
+    h3, h4 {
+        font-size: 25px;
+    }
+
+    h1, h2 {
+        font-size: 36px;
+        font-family: franklin-bold;
+    }
+
 `;
 
 const JobCont = styled.div`
@@ -98,7 +108,7 @@ class OpenPositions extends Component {
     render() {
         return (
             <Container id="openPositions">
-                <h1 style={{fontFamily: "franklin", marginBottom: "10px" }}>Open Positions</h1>
+                <h1 style={{marginBottom: "10px", fontFamily: "franklin_bold"}}>Open Positions</h1>
                 <p style={{marginBottom: "50px"}}>We are growing quickly and looking for smart people who show up on a daily basis with a positive mental attitude. If you believe in our mission and are driven, creative, and ethical, then please reach out to us.  </p>
 
                 {this.state.doc &&

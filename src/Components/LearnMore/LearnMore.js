@@ -14,12 +14,6 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background: linear-gradient(
-    //     165deg,
-    //     rgba(239, 250, 255, 0) 40%,
-    //     rgba(223, 241, 252, 0.7) 100%
-    // );
-
     h2 {
         margin: 0px;
     }
@@ -55,12 +49,12 @@ class LearnMore extends Component {
         return (
             <Section>
                 <Container>
-                    <h2 style={{ marginBottom: "25px"}}>Bringing You Safe and Secure Custody</h2>
+                    <h2 style={{ marginBottom: "25px", padding: "10px"}}>Bringing You Safe and Secure Custody</h2>
                     <GetStarted
                         className="hideGetStarted"
                         data-uk-toggle="target: #contact-form"
                     >
-                        <div style={{padding: "0px 20px"}}>Get Started</div>
+                        <div>Get Started</div>
                     </GetStarted>
                 </Container>
             </Section>

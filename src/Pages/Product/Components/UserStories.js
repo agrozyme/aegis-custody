@@ -7,6 +7,9 @@ const ContentLayer = styled.div`
     height: 100%;
     justify-content: center;
 
+    h2 {
+        font-size: 42px;    
+    }
 
     .userStoryBox {
         display: flex;
@@ -30,6 +33,10 @@ const ContentLayer = styled.div`
 
         max-width: 100%;
         
+        h2 {
+            font-size: 36px;
+        }
+
     }
 `;
 
@@ -37,12 +44,11 @@ const ContentLayer = styled.div`
 class UserStories extends Component {
     render() {
         return (
-            <div style={{ backgroundColor: "#4D6A7C", padding: "70px 10px" }}>
-                {/* <h1 style={{ textAlign: "center", color: "white" }}>User Stories</h1> */}
+            <div style={{ backgroundColor: "#699eba", padding: "70px 10px" }}>
                 <ContentLayer  data-uk-scrollspy="target: > .userStoryBox; cls:uk-animation-fade; delay: 200">
 
                 <div className="supportedCoins" style={{ margin: "15px", display: "flex", alignContent: "center", maxWidth: "700px", flexWrap: "wrap" }}>
-                            <h2 style={{ minWidth: "100%", margin: "0 0 25px 0", color: "white", textAlign: "center", fontSize: "42px"}}>We Currently Support</h2>
+                            <h2 style={{ minWidth: "100%", margin: "0 0 25px 0", color: "white", textAlign: "center"}}>We Currently Support</h2>
                             <div style={{ minWidth: "100%", display: "flex", justifyContent: "center" }}>
                                 <div><img style={{ maxHeight: "70px", margin: "10px 20px" }} src="./images/coin-1.png" alt="" />
                                 <p style={{color: "white", textAlign: "center", width: "100%"}}>BTC</p></div>

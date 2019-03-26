@@ -27,7 +27,7 @@ const Container = styled.div`
         margin: 0px;
         padding-bottom: 20px;
         @media (max-width: 600px) {
-            font-size: 1.7em;
+            font-size: 36px;
         }
     }
 
@@ -39,13 +39,13 @@ const Diagram = styled.div`
     width: 100%;
     height: auto;
     min-height: 500px;
-    background-image: url(./images/user-flow.png);
+    background-image: url(./images/user-flow3.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (max-width: 1000px) {
-        background-image: url(./images/flowvertical.png);
+        background-image: url(./images/flowvertical2.png);
         min-height: 700px;
         margin: 0 auto;
     }
@@ -58,11 +58,6 @@ const ContentRow = {
     display: "flex",
     justifyContent: "center",
     marginTop: "40px"
-}
-
-const ContentImages = {
-    maxHeight: "130px",
-    maxWidth: "130px"
 }
 
 const ContentImageWrap = {
@@ -85,7 +80,26 @@ const WFBox = styled.div`
             width: 100% !important;
 
         }
+
+        img {
+            height: 75px;
+            width: 75px;
+        }
     }
+`
+
+const ContentImage = styled.div`
+    
+    img {
+        max-height: 75px;
+    max-width: 75px; 
+
+    @media (max-width: 1000px) {
+        max-height: 75px;
+        max-width: 75px  
+    }
+    
+}
 `
 
 class WorkflowDiagram extends Component {
@@ -96,11 +110,11 @@ class WorkflowDiagram extends Component {
                 <Diagram></Diagram>
                 <WFBox style={ContentRow}  data-uk-scrollspy="target: > .workflowBox; cls:uk-animation-fade; delay: 200">
                     <div className="workflowBox" style={ContentBox}>
-                        <div style={ContentImageWrap}><img src="./images/icons-21.png" style={ContentImages}></img></div>
+                        <ContentImage><img src="./images/icons-21.png"></img></ContentImage>
                         <p>All private keys are stored on security chips and our distributed key management system eliminates single points of failure</p>
                     </div>
                     <div className="workflowBox" style={ContentBox}>
-                        <div style={ContentImageWrap}><img src="./images/icons-23.png" style={ContentImages}></img></div>
+                        <ContentImage><img src="./images/icons-23.png"></img></ContentImage>
                         <p>Customizable signing policies are used to control asset transfers based on transaction size and frequency</p>
                     </div>
                 </WFBox>

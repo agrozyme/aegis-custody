@@ -10,7 +10,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     min-height: 800px;
-    //display background line;
+
     ${props =>
         props.bgLine &&
         `
@@ -19,8 +19,11 @@ const Container = styled.div`
         background-position: 130px 0px;
         background-size: 2px 100%;
     `}
+
     @media (max-width: 1000px) {
-        height: 300px;
+        overflow: hidden;
+        min-height: 400px;
+        height: calc(100vh-40px);
     }
 `;
 

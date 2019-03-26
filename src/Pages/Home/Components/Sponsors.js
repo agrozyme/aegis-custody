@@ -21,6 +21,7 @@ const EndorsementsInner = styled.div`
     h2 {
         margin: 0px;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     div {

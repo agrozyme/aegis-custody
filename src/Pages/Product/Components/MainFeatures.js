@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-    background: linear-gradient(to top, #344854, #4C626B);
+    background: #336985;
     color: #fff;
     padding: 60px 60px;
     display: flex;
@@ -41,6 +41,11 @@ const Body = styled.div`
         color: white;
         text-align: center;
         margin: 10px auto;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 42px;
     }
 
     @media (max-width: 1000px) {
@@ -59,6 +64,9 @@ const Body = styled.div`
 
         }
     
+        h2 {
+            font-size: 36px;
+        }
 
     }
 `
@@ -80,8 +88,8 @@ const ProtectionImage = styled.div`
 `
 
 const ContentImages = {
-    height: "130px",
-    width: "130px",
+    height: "75px",
+    width: "75px",
     margin: "0 auto",
 
 }
@@ -93,22 +101,13 @@ class MainFeatures extends Component {
             <Container>
 
                 <ContentBox style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                    {/* <Coins style={{minWidth: "260px", display: "flex", alignItems: "center", flexDirection: "column"}}>
-                        <div style={{textAlign: "center"}}><p style={{fontSize: "25px", margin: "0"}}>We Currently Support</p></div>
-                        <div style={{display: "flex", justifyContent: "space-between", margin: "25px 0"}}>
-                            <img style={{maxHeight: "60px"}} src="./images/coin-1.png" alt="" />
-                            <img style={{maxHeight: "60px"}} src="./images/coin-2.png" alt="" />
-                            <img style={{maxHeight: "60px"}} src="./images/coin-3.png" alt="" />
-                        </div>
-                        <div style={{textAlign: "center"}}><p style={{fontSize: "25px", margin: "0"}}>and more coming soon</p></div>
-                    </Coins> */}
                     <Body style={{minWidth: "100%"}}>
-                        <h2 style={{color: "white", textAlign:"center", fontSize: "42px"}}>Protection Against</h2>
+                        <h2 style={{color: "white", textAlign:"center"}}>Protection Against</h2>
 
                         <img className="image1" style={{maxHeight: "200px"}} src="./images/diagram3.png"></img>
 
                        <img className="image2" src="./images/icons-49.png" style={ContentImages}></img>
-                        <div style={{display: "flex", flexDirection:"column", justifyContent:"center"}}>
+                        <div style={{display: "flex", flexDirection:"column", justifyContent:"center", marginTop: "15px"}}>
                         <h3 style-={{textAlign: "center"}}>INTERNAL THREATS</h3>
                        <h3 style-={{textAlign: "center"}}>EXTERNAL ADVERSARIES</h3>
                        <h3 style-={{textAlign: "center"}}>HUMAN ERROR</h3>

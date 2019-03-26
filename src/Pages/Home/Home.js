@@ -169,7 +169,7 @@ class Home extends Component {
 
                 <LearnMore2>
                 <Container>
-                    <h2 style={{ marginBottom: "25px"}}>See Our Institutional Self-Custody Solution</h2>
+                    <h2 style={{ marginBottom: "25px", padding: "10px"}}>See Our Institutional Self-Custody Solution</h2>
                     <GetStarted2
                     >
                         <a href="/product" style={{padding: "0px 20px"}}>Learn More</a>

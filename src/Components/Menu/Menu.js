@@ -36,14 +36,29 @@ const ItemContainer = styled.div`
 
 const NavItem = styled.div`
     margin-left: 10px;
-    padding: 8px 20px 6px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s ease;
 
+    a {
+        text-align: center;
+        padding: 0px 37px 0px 37px;
+        border-radius: 20px;
+        border: 0;
+        font-size: 1em;
+    }
+
     @media (max-width: 1200px) {
         padding: 8px 10px 6px 10px;
+
+        a {
+            text-align: center;
+            padding: 0px 37px 0px 37px;
+            border-radius: 20px;
+            border: 0;
+            font-size: 1em;
+        }
     }
 
     a {
@@ -51,7 +66,8 @@ const NavItem = styled.div`
         font-weight: bold;
         text-decoration: none;
         color: #fff;
-        ${props => props.dark && "color: #353535;"}
+        ${props => props.dark && "color: #353535;"};
+        text-align: center
     }
 
     .navItem {
@@ -67,9 +83,7 @@ const NavItem = styled.div`
         transition: .2s ease;
         font-family: system-ui;
         font-weight: normal;
-        font-size: 16px;
-        border-radius: 50px;
-        padding-bottom: 2px;
+        font-size: 1em;
     }
 
     .hideGetStarted:hover {
@@ -83,10 +97,6 @@ const NavItem = styled.div`
         border-radius: 20px;
         `}
 `;
-
-const GetStarted = {
-    padding: "8px 15px 6px 15px"
-};
 
 const Close = styled.button`
     svg {
@@ -196,13 +206,10 @@ class Menu extends Component {
                     <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/about">About</Link>
                     </NavItem>
-                    {/* <NavItem dark={this.state.dark} style={{padding: "0"}}>
-                        <Link className="navItem" to="/about">News</Link>
-                    </NavItem> */}
                     <NavItem dark={this.state.dark} style={{padding: "0"}}>
                         <Link className="navItem" to="/careers">Careers</Link>
                     </NavItem>
-                    <NavItem primary={true} style={GetStarted}>
+                    <NavItem primary={true}>
                         <a
                             href="#contact-form"
                             data-uk-toggle="target: #contact-form"
