@@ -157,6 +157,13 @@ class Menu extends Component {
 
                         <ul className="uk-nav uk-nav-default uk-text-center uk-margin-large-top">
                             <li className="mobileNavItem">
+                            <Link
+                                    style={mobileNavItem}
+                                    to="/"
+                                    data-uk-toggle="target: #slideNav"
+                                >
+                                    Home
+                                </Link>
                                 <Link
                                     style={mobileNavItem}
                                     to="/product"

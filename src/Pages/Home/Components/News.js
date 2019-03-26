@@ -77,7 +77,7 @@ const NewsCont = styled.div`
 
 const ScrollTab = styled.div`
     position: absolute;
-    bottom: 40px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     display: none;

@@ -19,7 +19,7 @@ const Container = styled.div`
     }
 
     @media (max-width: 1000px) {
-        padding: 50px 25px;
+        padding: 120px 25px;
         background: #fff;
     }
 
