@@ -36,6 +36,7 @@ const GetStarted = styled.button`
     cursor: pointer;
     z-index: 2;
     text-align: center;
+    min-width: 190px;
 
     ${props =>
         props.keyPage
