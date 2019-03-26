@@ -9,7 +9,7 @@ import Footer from "../../Components/Footer";
 import News from "./Components/News"
 
 const GetStarted = styled.button`
-    background: #ff6a5f;
+    background: #ff6a5f !important;
     border-radius: 20px;
     border: 0px solid #ff6a5f;
     padding: 10px 20px;
@@ -170,8 +170,8 @@ class Home extends Component {
                 <LearnMore2>
                 <Container className="hideGetStarted">
                     <h2 style={{ marginBottom: "25px", padding: "10px"}}>See Our Institutional Self-Custody Solution</h2>
-                    <GetStarted2
-                    >
+                    <GetStarted2 className="hideGetStarted">
+                    
                         <a href="/product" className="hideGetStarted" style={{padding: "0px 20px"}}>Learn More</a>
                     </GetStarted2>
                 </Container>

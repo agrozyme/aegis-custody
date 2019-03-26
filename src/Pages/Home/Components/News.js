@@ -55,6 +55,7 @@ const NewsStory = styled.div`
     }
     @media (max-width: 1000px) {
         min-width: 100%;
+        margin: 0 20px 0 0;
     }
 `
 
@@ -72,6 +73,7 @@ const Arrow = styled.div`
 const NewsCont = styled.div`
     @media(max-width: 1000px) {
         width: calc(100vw-110px);
+        margin: 0 40px;
     }
 `
 
@@ -89,8 +91,14 @@ const ScrollTab = styled.div`
 
 const NewsSection = styled.div`
     padding: 70px 40px;
+    .newsBox {
+        max-width: 80%
+    }
     @media (max-width: 1000px) {
         padding: 100px 0;
+        .newsBox{
+            max-width: 100%;
+        } 
     }
 `
 
@@ -99,8 +107,9 @@ class News extends Component {
         return (
             <NewsSection  >
                 <h2 style={{textAlign: "center"}}>In the Media</h2>
-                <div style={{overflow: "hidden", maxWidth: "80%", margin: "0 auto", display: "flex", alignItems: "center", position: "relative"}}>
+                <div className="newsBox" style={{overflow: "hidden", margin: "0 auto", display: "flex", alignItems: "center", position: "relative"}}>
                 <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
+                
                 <NewsCont style={{ display: "flex", overflow: "scroll", minHeight: "400px" }}>
                     {Stories.map((red, i) => (
                             <NewsStory key={i} id={"newsstory"+i}>
@@ -110,6 +119,7 @@ class News extends Component {
                             </NewsStory>
                         ))}
                 </NewsCont>
+
                 <a href="#newsstory5"><Arrow href="#newsstory1" style={{backgroundImage: "url(./images/arrowright.png)"}}></Arrow></a>
                 <ScrollTab>Scroll right for more stories</ScrollTab>
                                     
