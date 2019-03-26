@@ -85,10 +85,6 @@ class Footer extends Component {
                             About
                         </Link>
                         <br />
-                        <Link to="/about" style={LinkStyle}>
-                            News
-                        </Link>
-                        <br />
                         <Link to="/careers" style={LinkStyle}>
                             Careers
                         </Link>
@@ -104,7 +100,7 @@ class Footer extends Component {
                         <p>Safe. Secure. Simple.</p>
                         <p>San Francisco, CA USA</p>
                         <p>Copyright &copy; 2019. </p>
-                        <p>All Rights Reserved.22</p>
+                        <p>All Rights Reserved. 2.4</p>
                     </Col>
                 </Row>
             </Container>

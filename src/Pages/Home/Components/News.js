@@ -53,6 +53,7 @@ const NewsStory = styled.div`
     a {
         color: #FF6A5F
     }
+
     @media (max-width: 1000px) {
         min-width: 100%;
         margin: 0 20px 0 0;
@@ -71,9 +72,11 @@ const Arrow = styled.div`
 `
 
 const NewsCont = styled.div`
+min-height: 400px;
     @media(max-width: 1000px) {
         width: calc(100vw-110px);
         margin: 0 40px;
+        min-height: 300px;
     }
 `
 
@@ -83,9 +86,14 @@ const ScrollTab = styled.div`
     left: 50%;
     transform: translateX(-50%);
     display: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 
     @media (max-width: 1000px) {
         display: flex;
+        margin: 0 auto;
+        justify-content: center;
     }
 `
 
@@ -95,7 +103,11 @@ const NewsSection = styled.div`
         max-width: 80%
     }
     @media (max-width: 1000px) {
-        padding: 100px 0;
+        padding: 150px 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .newsBox{
             max-width: 100%;
         } 
@@ -105,12 +117,12 @@ const NewsSection = styled.div`
 class News extends Component {
     render() {
         return (
-            <NewsSection  >
+            <NewsSection>
                 <h2 style={{textAlign: "center"}}>In the Media</h2>
                 <div className="newsBox" style={{overflow: "hidden", margin: "0 auto", display: "flex", alignItems: "center", position: "relative"}}>
                 <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
                 
-                <NewsCont style={{ display: "flex", overflow: "scroll", minHeight: "400px" }}>
+                <NewsCont style={{ display: "flex", overflow: "scroll",  }}>
                     {Stories.map((red, i) => (
                             <NewsStory key={i} id={"newsstory"+i}>
                                 <h3>{red.headline}</h3>

@@ -6,10 +6,17 @@ const Content = {
     paragraph2: "Until now, institutions that use digital assets have had to rely on custody tools that were difficult to operate and compromised on security."
 }
 
+const Body = styled.div`
+    @media (max-width: 1000px) {
+        min-height: 100vh;
+    }
+
+`
+
 class DesignPhilosophy extends Component {
     render() {
         return (
-            <div id="section2" style={{minWidth: "100vw", padding: "90px 0 20px", boxShadow: "0px 5px 10px rgba(0,0,0,.2"}}>
+            <Body id="section2" style={{minWidth: "100vw", padding: "90px 0 20px", boxShadow: "0px 5px 10px rgba(0,0,0,.2"}}>
                 <div style={{margin: "0 15px"}}>
                     <div style={{width: "100%", display: "flex", justifyContent: "center"}}><img style={{maxHeight: "100px"}} src="./images/icons-24.png"></img></div>
                     {/* <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
@@ -23,7 +30,7 @@ class DesignPhilosophy extends Component {
                     </div>
 
                 </div>
-            </div>
+            </Body>
         );
     }
 }
