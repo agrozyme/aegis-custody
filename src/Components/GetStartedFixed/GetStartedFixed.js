@@ -5,7 +5,7 @@ const Btn = styled.button`
     position: fixed;
     bottom: 50px;
     right: 50px;
-    padding: 10px 37px 10px 37px;
+    padding: 11px 37px 10px 37px;
     border: 0px solid #fff;
     font-size: 1em;
     text-decoration: none;
@@ -23,7 +23,7 @@ const Btn = styled.button`
         text-align: center;
         right: 50%;
         transform: translate(50%);
-        min-width: 200px;
+        min-width: 180px;
     }
 `;
 

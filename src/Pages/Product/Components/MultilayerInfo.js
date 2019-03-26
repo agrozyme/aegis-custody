@@ -68,6 +68,8 @@ const Diagram = styled.div`
     @media (max-width: 1000px) {
         min-height: 500px;
         background-image: url(./images/diagramvertical.png);
+        margin: 20px 0;
+        background-size: contain;
     }
 
 `
