@@ -23,7 +23,7 @@ const Btn = styled.button`
         text-align: center;
         right: 50%;
         transform: translate(50%);
-        min-width: 180px;
+        min-width: 190px;
     }
 `;
 
