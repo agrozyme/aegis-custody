@@ -24,6 +24,7 @@ const Btn = styled.button`
         right: 50%;
         transform: translate(50%);
         min-width: 190px;
+        text-align: center;
     }
 `;
 
@@ -107,9 +108,7 @@ class GetStartedFixed extends Component {
                 id="getStartedFixed"
                 className="animated fast"
                 data-uk-toggle="target: #contact-form"
-            >
-                Get Started
-            </Btn>
+            >Get Started</Btn>
         );
     }
 }

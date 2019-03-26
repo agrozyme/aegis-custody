@@ -104,7 +104,6 @@ const NewsSection = styled.div`
     }
     @media (max-width: 1000px) {
         padding: 150px 0;
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
