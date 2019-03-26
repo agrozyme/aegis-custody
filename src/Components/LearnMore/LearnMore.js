@@ -14,6 +14,12 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background: linear-gradient(
+    //     165deg,
+    //     rgba(239, 250, 255, 0) 40%,
+    //     rgba(223, 241, 252, 0.7) 100%
+    // );
+
     h2 {
         margin: 0px;
     }
@@ -23,7 +29,7 @@ const GetStarted = styled.button`
     background: #ff6a5f;
     border-radius: 20px;
     border: 0px solid #ff6a5f;
-    padding: 10px 30px;
+    padding: 10px 37px;
     color: #fff;
     text-transform: uppercase;
     font-size: 1em;
@@ -40,7 +46,6 @@ const GetStarted = styled.button`
         box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
     `
             : `
-        padding: 10px 20px;
     `}
 `;
 
@@ -54,7 +59,7 @@ class LearnMore extends Component {
                         className="hideGetStarted"
                         data-uk-toggle="target: #contact-form"
                     >
-                        <div>Get Started</div>
+                        <div style={{}}>Get Started</div>
                     </GetStarted>
                 </Container>
             </Section>
