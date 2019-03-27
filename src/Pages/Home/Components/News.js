@@ -131,7 +131,7 @@ class News extends Component {
     }
 
     loadNews = () => {
-        const apiEndpoint = "https://aegis.cdn.prismic.io/api/v2";
+        const apiEndpoint = "https://aegiscustodywebsite.cdn.prismic.io/api/v2";
 
         Prismic.api(apiEndpoint).then(api => {
             api.query(
@@ -162,7 +162,7 @@ class News extends Component {
                 {this.state.doc && this.state.doc.map((news, i) => (
                     <NewsStory id={"#newsstory"+[i]}>
                         <h3>{news.data.headline[0].text}</h3>
-                        <p>{news.data.newsdate[0].text}</p>
+                        <p>{news.data.date[0].text}</p>
                         <a href={news.data.website[0].text}>{news.data.websitedisplay[0].text}</a>
                     </NewsStory>
                 ) )
