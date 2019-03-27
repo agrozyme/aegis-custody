@@ -160,7 +160,7 @@ class News extends Component {
                 
                 <NewsCont style={{ display: "flex", overflow: "scroll",  }}>
                 {this.state.doc && this.state.doc.map((news, i) => (
-                    <NewsStory id={"#newsstory"+1}>
+                    <NewsStory id={"#newsstory"+[i]}>
                         <h3>{news.data.headline[0].text}</h3>
                         <p>{news.data.newsdate[0].text}</p>
                         <a href={news.data.website[0].text}>{news.data.websitedisplay[0].text}</a>
