@@ -55,17 +55,6 @@ const LinkStyle = {
     margin: "0"
 };
 
-{
-    /* <p>
-AegisCo is a Fintech digital assets management company
-based in San Francisco, CA. Founded in 2018, Aegis
-Custody is investor backed and provides Custody solution
-to institutions, exchanges, funds and STOs.
-</p> */
-}
-
-// F7F7F7
-
 class Footer extends Component {
     render() {
         return (

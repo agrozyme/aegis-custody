@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Menu from "../../../Components/Menu";
 
 const Container = styled.div`
-    min-height: 650px;
     width: 100vw;
     overflow: auto;
     background: url(./images/skyline2.jpg);
@@ -12,11 +11,9 @@ const Container = styled.div`
     background-position: bottom;
     background-size: cover;
 
-    // @media (max-width: 1000px) {
-    //     background: url(./images/bridge2mobile.jpg);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
+    @media (min-width: 1000px) {
+        min-height: 650px;
+    }
 
 `;
 
@@ -55,14 +52,25 @@ const ContentContainer = styled.div`
     }
 `;
 
+
+const MobileHeader = styled.div`
+    display: none;
+
+    @media (max-width: 1000px) {
+        display: flex;
+        text-align: center;
+        font-sizeL 36px
+    }
+
+`
+
+
 class Landing extends Component {
     render() {
         return (
             <div>
                 <Container>
-                    <Menu dark={true} />
                     <ContentContainer>
-                        <div style={{minHeight: "120px"}}></div>
                         <div style={{textAlign: "center", maxWidth: "800px" }}>
                             <h2 style={{color: "white", lineHeight: "65px", fontSize: "55px", color: "#353535"}}>Our Mission</h2>
                             <p style={{color: "#353535"}}>Aegis Custody is building easy-to-use products and services that empower institutions to securely use blockchain technologies and digital assets. </p>

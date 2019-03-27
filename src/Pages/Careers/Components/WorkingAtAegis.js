@@ -13,6 +13,10 @@ const Container = styled.div`
     background-position: bottom;
     background-repeat: no-repeat;
 
+    @media (max-width: 1000px) {
+        min-height: 500px !important;
+    }
+
     h2 {
         @media (max-width: 1000px) {
             font-size: 35px !important;

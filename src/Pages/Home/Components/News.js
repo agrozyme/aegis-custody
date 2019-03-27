@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Prismic from "prismic-javascript";
 
 const Stories = [
     {
@@ -28,7 +29,8 @@ const Stories = [
         headline: "Aegis Custody Details Plans to Launch Digital Assets Custody Solution at North American Bitcoin Conference",
         link: "https://www.cryptocurrencywire.com/cryptonewsbreaks/cryptonewsbreaks-aegis-custody-details-plans-to-launch-digital-assets-custody-solution-at-north-american-bitcoin-conference/",
         description: "Aegis Custody, a subsidiary of Aegis Capital Management, today announced plans to launch its digital assets custody solution for U.S. investors at the North American Bitcoin Conference, which is currently underway in Miami, Florida",
-        date: "Jan 17, 2019",site: "Cryptocurrecy Wire"
+        date: "Jan 17, 2019",
+        site: "Cryptocurrecy Wire"
     },
     {
         headline: "Aegis Custody to Launch Digital Asset Custody Service at The North American Bitcoin Conference; CTO Frank Fu to Speak on Main Stage",
@@ -82,7 +84,7 @@ min-height: 400px;
 
 const ScrollTab = styled.div`
     position: absolute;
-    bottom: -30px;
+    bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -104,7 +106,7 @@ const NewsSection = styled.div`
         overflow: hidden;
     }
     @media (max-width: 1000px) {
-        padding: 150px 0;
+        padding: 120px 0 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -119,6 +121,36 @@ const NewsSection = styled.div`
 `
 
 class News extends Component {
+
+    state = {
+        doc: null,
+    };
+
+    componentDidMount() {
+        this.loadNews();
+    }
+
+    loadNews = () => {
+        const apiEndpoint = "https://aegis.cdn.prismic.io/api/v2";
+
+        Prismic.api(apiEndpoint).then(api => {
+            api.query(
+                Prismic.Predicates.at("document.type", "news")
+            ).then(response => {
+                if (response) {
+
+                    console.log(response)
+
+                    this.setState({ doc: response.results });
+                    
+                    console.log(this.state.doc)
+                
+                }
+            });
+        });
+        
+    };
+    
     render() {
         return (
             <NewsSection>
@@ -127,13 +159,14 @@ class News extends Component {
                 <a href="#newsstory1"><Arrow href="#newsstory5"></Arrow></a>
                 
                 <NewsCont style={{ display: "flex", overflow: "scroll",  }}>
-                    {Stories.map((red, i) => (
-                            <NewsStory key={i} id={"newsstory"+i}>
-                                <h3>{red.headline}</h3>
-                                <p>{red.date}</p>
-                                <a href={red.link}>{red.site}</a>
-                            </NewsStory>
-                        ))}
+                {this.state.doc && this.state.doc.map((news, i) => (
+                    <NewsStory id={"#newsstory"+1}>
+                        <h3>{news.data.headline[0].text}</h3>
+                        <p>{news.data.newsdate[0].text}</p>
+                        <a href={news.data.website[0].text}>{news.data.websitedisplay[0].text}</a>
+                    </NewsStory>
+                ) )
+                }
                 </NewsCont>
 
                 <a href="#newsstory5"><Arrow href="#newsstory1" style={{backgroundImage: "url(./images/arrowright.png)"}}></Arrow></a>

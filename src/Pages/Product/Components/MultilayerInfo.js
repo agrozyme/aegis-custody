@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-// import { connect } from "http2";
 
 const Container = styled.div`
+
     padding: 70px 30px;
     text-align: center;
     display: flex;
@@ -15,6 +15,7 @@ const Container = styled.div`
     @media (max-width: 800px) {
         background: #fff;
     }
+
 `;
 
 const KeyItems = styled.div`

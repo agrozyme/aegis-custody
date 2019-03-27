@@ -73,11 +73,11 @@ const LeaderTitle = styled.h1`
     margin-left: 60px;
 
     @media (max-width: 1255px) {
-        font-size: 3em;
+        font-size: 36px;
     }
 
     @media (max-width: 1000px) {
-        font-size: 35px;
+        font-size: 36px;
         margin-bottom: 5px;
         margin-left: 40px;
         margin-right: 20px;

@@ -84,6 +84,7 @@ const ModalBody = styled.div`
 `;
 
 class OpenPositions extends Component {
+
     state = {
         doc: null
     };
@@ -104,7 +105,9 @@ class OpenPositions extends Component {
                 }
             });
         });
+
     };
+
     render() {
         return (
             <Container id="openPositions">
@@ -148,6 +151,7 @@ class OpenPositions extends Component {
                             <h4 style={{marginTop: "10px", marginBottom: "10px"}}>{job.data.job_title[0].text}</h4>
                             <p style={{marginTop: "10px", marginBottom: "0px"}}>{job.data.location[0].text}</p>
                             <p style={{marginTop: "0px", marginBottom: "10px"}}>{job.data.job_brief[0].text}</p>
+
                             <Apply data-uk-toggle={"target: #job-listing-" + i} style={{marginTop: "0px", marginBottom: "10px"}}>
                                 See More{" "}
                                 <img

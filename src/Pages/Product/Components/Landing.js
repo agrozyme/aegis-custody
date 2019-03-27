@@ -19,7 +19,7 @@ const ContentContainer = styled.div`
     background-repeat: no-repeat
 
     @media (max-width: 1000px) {
-        min-height: 600px
+        min-height: 500px
     }
 
 `;
@@ -36,6 +36,11 @@ const Copy = styled.div`
     .mobile {
         display: none;
     }
+
+    h1 {
+        font-size: 55px;
+    }
+
     @media (max-width: 800px) {
         max-width: 90%;
         h1 {
@@ -116,6 +121,27 @@ const Content = {
     policy: "Customizable business logic for all types of institutions"
 }
 
+
+const MobileHeader = styled.div`
+    display: none;
+
+    @media (max-width: 1000px) {
+
+        display: flex;
+
+        h1{
+            text-align: center;
+            font-size: 36px;
+            width: 100%;
+            margin: 60px auto 40px;
+
+        }
+
+    }
+
+`
+
+
 class Landing extends Component {
     render() {
         return (
@@ -132,6 +158,10 @@ class Landing extends Component {
                     </Copy>
                 </ContentContainer>
                 <ContentItems>
+
+                <MobileHeader>
+                    <h1>Features</h1>
+                </MobileHeader>
                     <ContentRow style={ContentRowStyle} style={{ maxWidth: "1300px", margin: "0 auto", display: "flex" }}>
                         <ContentBox className="contentBox" style={ContentBoxStyle}>
                             <div style={LandingImageWrap}>
