@@ -136,8 +136,24 @@ class News extends Component {
       api
         .query(Prismic.Predicates.at('document.type', 'news'))
         .then(response => {
-          const doc = response ? response.results : null;
-          this.setState({ doc });
+          if (response) {
+            const doc = response.results.sort((left, right) => {
+              const leftDate = new Date(left.data.date[0].text);
+              const rightDate = new Date(right.data.date[0].text);
+
+              if (leftDate > rightDate) {
+                return -1;
+              } else if (leftDate < rightDate) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+
+            this.setState({ doc });
+          } else {
+            this.setState({ doc: null });
+          }
         });
     });
   };
